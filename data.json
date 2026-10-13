@@ -1,0 +1,40 @@
+{
+ "agent": "Blueprint",
+ "role": "Dream Home Agent",
+ "updated": "2026-10-13",
+ "project": "Weberman Residence",
+ "facts": ["Thailand", "~5,200 sf", "3 Bed / 3.5 Bath", "Sustainable Luxury"],
+ "status": "Design Development. Drawing set, energy and water systems done. Kitchen Round 1 in review.",
+ "decisions": [
+  {"title": "Wall Texture And Accent Plaster", "note": "This or That round offered. Waiting on your picks."},
+  {"title": "Kitchen: Herb Nook To Corner", "note": "Move the herb nook to the corner? Yes or no."},
+  {"title": "Kitchen: Brushed Stainless Faucet", "note": "Confirm the faucet finish."},
+  {"title": "Kitchen: Built-In Stainless Fridge", "note": "Confirm built-in over freestanding."},
+  {"title": "Round 3 This Or That", "note": "Door hardware, dining table, exterior lights."},
+  {"title": "Site Location", "note": "Pick the site to design around."},
+  {"title": "Finish Tier", "note": "Set the overall finish level."},
+  {"title": "Climbing Pavilion Design", "note": "Choose a direction for the pavilion."}
+ ],
+ "pending": [
+  {"title": "Engineer Check", "note": "Steel stud sizing and connections."},
+  {"title": "Deck Images", "note": "Beds and bath-vanity swipe deck images."}
+ ],
+ "recent": [
+  {"title": "Wall System", "note": "Steel stud, fiber-cement board, white painted textured plaster."},
+  {"title": "White Trim And Inset Cabinetry", "note": "Set as the interior standard."},
+  {"title": "17-Sheet BIM Drawing Set", "note": "Design development set, ready to review."},
+  {"title": "Solar And Battery", "note": "20 kWp solar with 30 kWh battery storage."},
+  {"title": "Rainwater", "note": "80 m³ rainwater storage."},
+  {"title": "Well And Filtration", "note": "Well water with whole-house filtration."},
+  {"title": "Kitchen Round 1", "note": "First kitchen design pass done."}
+ ],
+ "links": [
+  {"title": "3D Viewer", "note": "Walk the house model", "url": "https://webermanapps.github.io/weberman-residence/", "icon": "cube"},
+  {"title": "Kitchen Swipe Deck", "note": "Swipe kitchen options", "url": "https://webermanapps.github.io/blueprint-swipe/#/kitchen", "icon": "swipe"},
+  {"title": "Blueprint Swipe", "note": "100 design photos", "url": "https://webermanapps.github.io/blueprint-swipe/", "icon": "swipe"},
+  {"title": "This Or That Home", "note": "Round 1 photo pairs", "url": "https://webermanapps.github.io/this-or-that-home/", "icon": "split"},
+  {"title": "This Or That Round 2", "note": "Second round of pairs", "url": "https://webermanapps.github.io/this-or-that-home/round2/", "icon": "split"},
+  {"title": "Drawing Set PDF", "note": "17 sheets, DD set", "url": "Weberman_Residence_DD_Set.pdf", "icon": "doc"}
+ ],
+ "video": {"title": "Water Systems", "src": "water_systems.mp4", "poster": "poster.png"}
+}

@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blueprint Command Center</title><meta name="description" content="Blueprint dream home agent dashboard">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--cream:#faf7f0;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--sage:#6b8f71;--amber:#b7791f;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--fg);font:16px/1.55 Hind,system-ui,sans-serif}
+h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 18px}
+header{background:var(--bg);border-bottom:1px solid var(--bd)}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:600}
+h1{font-size:clamp(40px,8vw,64px);margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chip{border:1px solid var(--bd);border-radius:999px;padding:4px 12px;font-size:14px;background:var(--cream)}
+.status{display:flex;gap:10px;align-items:flex-start;max-width:720px}.dot{width:10px;height:10px;border-radius:50%;background:var(--sage);margin-top:8px;flex:none}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}@media(min-width:1200px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+section{margin:28px 0}h2{font-size:30px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.count{font:600 13px Hind;background:var(--fg);color:#fff;border-radius:999px;padding:1px 9px}
+.card{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:16px}
+ul.list{list-style:none;margin:0;padding:0}ul.list li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--bd)}ul.list li:first-child{border-top:0}
+ul.list b{display:block;font-weight:600}ul.list span{color:var(--mut);font-size:15px}
+.mk{flex:none;width:22px;height:22px;margin-top:2px}
+.links{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:600px){.links{grid-template-columns:1fr 1fr}}@media(min-width:1100px){.links{grid-template-columns:repeat(3,1fr)}}
+a.lk{display:flex;gap:14px;align-items:center;min-height:64px;padding:14px;background:var(--bg);border:1px solid var(--bd);border-radius:12px;color:inherit;text-decoration:none}
+a.lk svg{width:28px;height:28px;flex:none}a.lk b{display:block;font-family:Khand;font-size:20px;line-height:1.1}a.lk span{color:var(--mut);font-size:14px}
+a.lk .arr{margin-left:auto;width:18px;height:18px;transition:transform var(--dur) var(--ease)}a.lk:hover .arr{transform:translateX(3px)}
+video{width:100%;border-radius:12px;background:#000;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:44px;padding:12px 28px;border:2px solid var(--pri);background:transparent;color:var(--pri);border-radius:0;font:600 13px Hind;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.btn:hover{background:var(--pri);color:#fafafa}
+.mw-hover{transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease),background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+.mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.02);box-shadow:0 6px 18px rgba(10,10,10,.12)}.mw-hover:active{transform:scale(.98)}
+@media(prefers-reduced-motion:reduce){.mw-hover,.mw-hover:hover,a.lk .arr{transition:none;transform:none}}
+.share{text-align:center;margin:36px 0 12px}#msg{color:var(--mut);font-size:14px;min-height:20px;margin-top:8px}
+footer{background:var(--bg);border-top:1px solid var(--bd);text-align:center;padding:22px 18px}
+.mw-built{font-size:14px;color:var(--mut)}.mw-built a{color:var(--fg);display:inline-flex;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid rgba(10,10,10,.3)}.mw-built a:hover{border-color:var(--fg)}
+.upd{color:var(--mut);font-size:14px}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow" id="role">Blueprint</div><h1 id="proj">Weberman Residence</h1><div class="chips" id="facts"></div>
+<div class="status"><span class="dot"></span><p id="status" style="margin:0"></p></div><p class="upd" id="upd"></p></div></header>
+<main class="wrap">
+<div class="grid"><section class="card"><h2>Decisions For You <span class="count" id="dc"></span></h2><ul class="list" id="decisions"></ul></section>
+<div><section class="card" style="margin-top:28px"><h2>Pending <span class="count" id="pc"></span></h2><ul class="list" id="pending"></ul></section>
+<section class="card"><h2>Recent Work</h2><ul class="list" id="recent"></ul></section></div></div>
+<section><h2>Apps And Files</h2><div class="links" id="links"></div></section>
+<section><h2 id="vt">Water Systems</h2><video id="vid" controls preload="none" playsinline></video></section>
+<div class="share"><button class="btn mw-hover" id="share"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Share</button><div id="msg"></div></div>
+</main>
+<footer><div class="mw-built"><a href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a></div></footer>
+<script>
+const I={
+cube:'<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/>',
+swipe:'<rect x="6" y="3" width="12" height="16" rx="2"/><path d="M2 21h20M9 21l-2 0"/>',
+split:'<rect x="3" y="5" width="8" height="14" rx="1"/><rect x="13" y="5" width="8" height="14" rx="1"/>',
+doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/>',
+q:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/>',
+clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
+const svg=(k,c)=>`<svg class="mk" viewBox="0 0 24 24" fill="none" stroke="${c||'currentColor'}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${I[k]}</svg>`;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const li=(a,k,c)=>a.map(x=>`<li>${svg(k,c)}<div><b>${esc(x.title)}</b><span>${esc(x.note)}</span></div></li>`).join('');
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
+role.textContent=d.agent+' · '+d.role;proj.textContent=d.project;status.textContent=d.status;upd.textContent='Updated '+d.updated;
+facts.innerHTML=d.facts.map(f=>`<span class="chip">${esc(f)}</span>`).join('');
+decisions.innerHTML=li(d.decisions,'q','#b7791f');dc.textContent=d.decisions.length;
+pending.innerHTML=li(d.pending,'clock','#737373');pc.textContent=d.pending.length;
+recent.innerHTML=li(d.recent,'check','#6b8f71');
+links.innerHTML=d.links.map(l=>`<a class="lk mw-hover" href="${esc(l.url)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${I[l.icon]||I.doc}</svg><div><b>${esc(l.title)}</b><span>${esc(l.note)}</span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>`).join('');
+vt.textContent=d.video.title;vid.src=d.video.src;vid.poster=d.video.poster;});
+share.onclick=async()=>{const u=location.href;try{if(navigator.share){await navigator.share({title:document.title,url:u})}else{await navigator.clipboard.writeText(u);msg.textContent='Link Copied'}}catch(e){}};
+</script></body></html>
