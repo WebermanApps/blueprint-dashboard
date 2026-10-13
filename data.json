@@ -172,5 +172,12 @@
   "title": "Open 3D Model",
   "url": "https://webermanapps.github.io/weberman-residence/",
   "image": "model.jpg"
- }
+ },
+ "attention": [
+  {
+   "level": "Warning",
+   "title": "Engineer Check Pending",
+   "note": "Steel stud sizing and connections still need an engineer's sign-off before the wall system is final."
+  }
+ ]
 }

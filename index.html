@@ -77,8 +77,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
  .share .sbtn{min-height:60px}#msg,.upd,.mw-built{font-size:18px}.mw-built a{min-height:52px}video{max-width:1400px}}
 @media(min-width:2400px){.tile{min-height:220px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.mw-hover:hover{transform:none}}
+.att{background:#fff;border-left:4px solid #b7791f}.att .ai{width:20px;height:20px;flex:none}.att li b{font-weight:700}.att .lv{font:700 11px Hind;letter-spacing:.12em;text-transform:uppercase;color:#8a5a12;margin-right:6px}
+@media(min-width:1600px){.att .ai{width:26px;height:26px}.att .lv{font-size:14px}}
 </style></head><body>
 <div class="rep" id="rep" hidden><div class="wrap"><button aria-expanded="false" id="repb"><span class="lab" id="rlab"></span><span class="sum" id="rsum"></span><span class="ch"></span></button><div class="ab"><div><ul id="rlist"></ul></div></div></div></div>
+<div class="rep att" id="att" hidden><div class="wrap"><button aria-expanded="false" id="attb"><svg class="ai" viewBox="0 0 24 24" fill="none" stroke="#b7791f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg><span class="lab">Needs Attention</span><span class="sum" id="asum"></span><span class="ch"></span></button><div class="ab"><div><ul id="alist"></ul></div></div></div></div>
 <header class="top"><div class="wrap"><div class="wm">Blueprint<small>Dream Home</small></div><a class="sbtn mw-hover" id="h3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener">3D Model</a></div></header>
 <section class="hero" id="home"><div class="wrap">
  <div><div class="brand" id="role">Dream Home Agent</div><h1 id="proj">Weberman Residence</h1><div class="rule"></div><p id="stat"></p><div class="chips" id="facts"></div></div>
@@ -108,7 +111,8 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 role.textContent=d.agent+' · '+d.role;proj.textContent=d.project;stat.textContent=d.status;upd.textContent='Updated '+d.updated;
 facts.innerHTML=d.facts.map(f=>`<span class="chip">${esc(f)}</span>`).join('');
 if(d.model){mlink.href=t3d.href=h3d.href=d.model.url;mlink.querySelector('.img').style.backgroundImage=`url(${d.model.image})`}
-if(d.report&&d.report.items&&d.report.items.length){rep.hidden=false;rlab.textContent=d.report.type+' · '+new Date(d.report.date+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});const G=d.report.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);rsum.textContent=G.map(g=>g.cat).filter(Boolean).join(' · ')||G[0].items[0];rlist.innerHTML=G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');repb.onclick=()=>tog(rep);if(innerWidth>=1024)tog(rep)}
+if(d.report&&d.report.items&&d.report.items.length){rep.hidden=false;rlab.textContent=d.report.type+' · '+new Date(d.report.date+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});const G=d.report.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);rsum.textContent=G.reduce((n,g)=>n+g.items.length,0)+' Updates';rlist.innerHTML=G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');repb.onclick=()=>tog(rep)}
+const A=d.attention||[];if(A.length){att.hidden=false;const c={};A.forEach(a=>c[a.level]=(c[a.level]||0)+1);asum.textContent=Object.entries(c).map(([k,n])=>n+' '+k+(n>1?'s':'')).join(' · ');alist.innerHTML=A.map(a=>`<li><span class="lv">${esc(a.level)}</span><b>${esc(a.title)}</b>: ${esc(a.note)}</li>`).join('');attb.onclick=()=>tog(att)}
 links.innerHTML=d.links.map(l=>`<a class="tile mw-hover" href="${esc(l.url)}" target="_blank" rel="noopener"><span class="ic">${sv(l.icon,'#171717')}</span><b>${esc(l.title)}</b><span>${esc(l.note)}</span></a>`).join('');
 decisions.innerHTML=d.decisions.map(x=>`<div class="acc"><button aria-expanded="false">${sv('q','#b7791f','mk')}<span class="at">${esc(x.title)}</span><span class="ch"></span></button><div class="ab"><div>${esc(x.note)}</div></div></div>`).join('');dc.textContent=d.decisions.length;
 decisions.querySelectorAll('.acc').forEach(a=>a.querySelector('button').onclick=()=>tog(a));
