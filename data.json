@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Fresh Start live. Kitchen photos fixed, 3D roof-off, wall standard in drawings. Your Apps on top; waiting on kitchen calls and Round 3 picks.",
+  "status": "Morning Report live. Holding overnight deck results for Max's freeze cleanup; waiting on kitchen calls, Round 3 picks and the bottom-tabs call.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -30,9 +30,18 @@
     {
       "title": "Round 3 This Or That",
       "note": "Door hardware, dining table, exterior lights."
+    },
+    {
+      "title": "Phone Bottom Tabs",
+      "note": "Keep or remove on this dashboard (no-fixed-bar rule)."
     }
   ],
   "pending": [
+    {
+      "title": "Overnight Deck Results",
+      "note": "Held until Max's freeze cleanup.",
+      "date": "Open"
+    },
     {
       "title": "Engineer Check",
       "note": "Steel stud sizing and connections.",
@@ -42,9 +51,24 @@
       "title": "Deck Images",
       "note": "Beds and bath-vanity swipe deck images.",
       "date": "Open"
+    },
+    {
+      "title": "Site, Finish Tier, Climbing Pavilion",
+      "note": "Still undecided.",
+      "date": "Open"
     }
   ],
   "recent": [
+    {
+      "title": "Morning Report",
+      "note": "Today's focus, decisions owed and pending items.",
+      "date": "Oct 14"
+    },
+    {
+      "title": "Submit Password Gate",
+      "note": "Blueprint Swipe and This or That Home R1+R2 now need the team password to send (done by Grok Bot).",
+      "date": "Oct 14"
+    },
     {
       "title": "Coach Layout Round 1",
       "note": "Shared top bar, title before report, decisions under report, See All, tighter rhythm.",
@@ -130,30 +154,30 @@
     "poster": "poster.png"
   },
   "report": {
-    "type": "Fresh Start",
-    "date": "2026-10-13",
+    "type": "Morning Report",
+    "date": "2026-10-14",
     "items": [
       {
-        "cat": "Ready For You",
+        "cat": "Today",
         "items": [
-          "Kitchen Swipe Deck photos fixed on iPhone (photo is the hero now).",
-          "3D model opens roof-off so rooms show first.",
-          "Wall standard updated in the drawings: steel stud, cement board, white textured plaster."
+          "Hold overnight Blueprint Swipe and This or That results until Max's freeze cleanup; no changes from them yet.",
+          "Keep the drawing set, 3D model (roof off) and wall standard current: steel stud, fiber-cement board, lime plaster."
         ]
       },
       {
         "cat": "Decide",
         "items": [
           "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-          "Wall texture and accent plaster This or That, on request.",
-          "Round 3 picks: door hardware, dining table, exterior lights."
+          "Round 3 picks: door hardware, dining table, exterior lights. Wall texture This or That on request.",
+          "Phone bottom tabs on this dashboard: keep or remove (no-fixed-bar rule)."
         ]
       },
       {
         "cat": "Pending",
         "items": [
           "Engineer check of steel stud sizing and connections.",
-          "Beds and bath-vanity swipe deck images still to generate."
+          "Beds and bath-vanity swipe deck images still to generate.",
+          "Still open: site location, finish tier, climbing pavilion details."
         ]
       }
     ]
