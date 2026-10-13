@@ -121,5 +121,5 @@ pending.innerHTML=rows(d.pending,'clock','#737373');pc.textContent=d.pending.len
 vt.textContent=d.video.title;vid.src=d.video.src;vid.poster=d.video.poster;});
 document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u=location.href.split('#')[0];try{if(navigator.share)await navigator.share({title:document.title,url:u});else{await navigator.clipboard.writeText(u);msg.textContent='Link Copied'}}catch(e){}});
 const tabs=[...document.querySelectorAll('nav.tabs a[href^="#"]')];tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('on'));t.classList.add('on')}));
-const nv=document.querySelector('nav.tabs'),shr=document.querySelector('.share');const nvf=()=>nv.classList.toggle('hide',shr.getBoundingClientRect().top<innerHeight-10);addEventListener('scroll',nvf,{passive:true});addEventListener('resize',nvf);nvf();
+const nv=document.querySelector('nav.tabs'),shr=document.querySelector('.share');const nvf=()=>nv.classList.toggle('hide',shr.getBoundingClientRect().top<innerHeight+40);addEventListener('scroll',nvf,{passive:true});addEventListener('resize',nvf);nvf();
 </script></body></html>
