@@ -81,7 +81,7 @@
   },
   {
    "title": "Rainwater",
-   "note": "80 m³ rainwater storage."
+   "note": "80 m\u00b3 rainwater storage."
   },
   {
    "title": "Well And Filtration",
@@ -136,34 +136,24 @@
   "poster": "poster.png"
  },
  "report": {
-  "type": "Morning Report",
+  "type": "Evening Report",
   "date": "2026-10-13",
   "items": [
    {
-    "cat": "Design",
+    "cat": "Today",
     "items": [
-     "Wall texture and accent plaster This or That is ready to build.",
-     "Three kitchen calls are waiting on you."
+     "Walls switched to steel stud, cement board and white textured plaster, with white trim and inset cabinetry, in the 17-sheet set and 3D model.",
+     "3D model now opens roof-off.",
+     "Dashboard rebuilt in the Home Guide style and tuned for phone, laptop and TV.",
+     "Kitchen deck photos fixed on iPhone; back links and pull-to-refresh added to all dream home apps."
     ]
    },
    {
-    "cat": "Drawings And Model",
+    "cat": "Tomorrow",
     "items": [
-     "Steel stud, cement board and white textured plaster walls, white trim and inset cabinetry are in the 17-sheet set.",
-     "3D model now opens roof-off."
-    ]
-   },
-   {
-    "cat": "Systems",
-    "items": [
-     "Solar, rainwater and well specs are complete.",
-     "Engineer check of steel stud sizing is pending."
-    ]
-   },
-   {
-    "cat": "Next",
-    "items": [
-     "Round 3 This or That: door hardware, dining table, exterior lights."
+     "Wall texture and accent plaster This or That, if you want it.",
+     "Submit button for swipe and This or That apps once the team picks a receiver.",
+     "Waiting on your three kitchen calls and Round 3 picks."
     ]
    }
   ]
