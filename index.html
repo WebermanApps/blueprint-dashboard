@@ -81,6 +81,45 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.mw-hover:hover{transform:none}}
 .att{background:#fff;border-left:4px solid #b7791f}.att .ai{width:20px;height:20px;flex:none}.att li b{font-weight:700}.att .lv{font:700 11px Hind;letter-spacing:.12em;text-transform:uppercase;color:#8a5a12;margin-right:6px}
 @media(min-width:1600px){.att .ai{width:26px;height:26px}.att .lv{font-size:14px}}
+
+/* Max settled dashboard picks (Oct 13 23:06 mix-dashboards): apply where sections exist */
+:root{--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E}
+.apphome{letter-spacing:.16em!important;font-size:11px!important;padding:0 12px!important;color:var(--lagoon)!important;border-color:var(--lagoon)!important}
+.apphome:hover{background:var(--lagoon)!important;color:#fafafa!important;border-color:var(--lagoon)!important}
+nav.tabs a.on{color:var(--lagoon);box-shadow:inset 0 -2px 0 var(--lagoon)}
+nav.tabs a:hover{color:var(--lagoon)}
+/* Fresh Start / report: fold-out kept; big title; roomy; numbered saffron rows */
+.rep .lab{font-size:13px;letter-spacing:.16em}
+.rep.open .lab{font:700 clamp(1.35rem,4.5vw,1.85rem)/1.1 Khand,Hind,sans-serif;letter-spacing:.04em;text-transform:none}
+.rep .ab>div{padding:4px 0 16px}
+.rep ul{list-style:none;padding:0 0 4px;margin:0;counter-reset:rn}
+.rep li:not(.rc){counter-increment:rn;display:flex;gap:10px;align-items:flex-start;padding:8px 0;margin:0;border-top:1px solid var(--line);font-size:15px}
+.rep li:not(.rc):before{content:counter(rn);flex:none;width:1.55em;height:1.55em;border-radius:50%;background:#FBF1D6;color:#8a6a10;font:700 .78rem Khand,Hind,sans-serif;display:flex;align-items:center;justify-content:center;margin-top:.15em}
+.rep li.rc{border-top:0;margin:14px 0 4px;padding:0;font:700 11px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252}
+.rep li.rc:before{display:none;content:none}
+/* Fresh Start icon action tiles (lagoon) — shown when report open */
+.rep-actions{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 8px}
+.rep-actions a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:2px solid var(--lagoon);color:var(--lagoon);background:#fff;text-decoration:none;font:700 12px Hind;letter-spacing:.1em;text-transform:uppercase;border-radius:0}
+.rep-actions a:hover{background:var(--lagoon);color:#fff}
+.rep-actions svg{width:18px;height:18px;flex:none}
+/* Attention / open items: two-up color-edge square cards */
+#alist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+@media(min-width:640px){#alist{grid-template-columns:1fr 1fr}}
+#alist li{border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:0;padding:14px 16px;background:#fff;margin:0}
+#alist li .lv{display:inline-block;border-radius:999px;padding:2px 9px;border:1px solid #e5e0d8;background:#FBF1D6;color:#8a6a12;margin:0 8px 6px 0}
+/* Waiting On Max / Decisions: tinted color-band + side-rule rows */
+#decide.grp{display:none}
+.decide-band{margin:28px 0 0;background:#FBF1D6;border:1px solid #F0E2B8;border-bottom:0;padding:12px 16px}
+.decide-band .lbl{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#8a6a10;display:block;margin-bottom:4px}
+.decide-band h3{margin:0;font:700 1.15rem/1.15 Khand,Hind,sans-serif;letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+.decide-band h3:before{content:"";width:3px;height:1.1em;background:var(--terra);flex:none}
+.decide-band .n{background:#fff;border-color:#8a6a10}
+#decisions{border:1px solid #F0E2B8;border-top:0}
+#decisions .acc{border-color:#F0E2B8;border-left:3px solid var(--terra)}
+#decisions .acc .at{font-size:15px}
+/* Status chips = pills */
+.chip{border-radius:999px}
+/* Pending/Recent stay rows; big-screen rules untouched above */
 </style><script src="ptr.js?v=3" defer></script></head><body>
 <div class="rep" id="rep" hidden><div class="wrap"><button aria-expanded="false" id="repb"><span class="lab" id="rlab"></span><span class="sum" id="rsum"></span><span class="ch"></span></button><div class="ab"><div><ul id="rlist"></ul></div></div></div></div>
 <div class="rep att" id="att" hidden><div class="wrap"><button aria-expanded="false" id="attb"><svg class="ai" viewBox="0 0 24 24" fill="none" stroke="#b7791f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg><span class="lab">Needs Attention</span><span class="sum" id="asum"></span><span class="ch"></span></button><div class="ab"><div><ul id="alist"></ul></div></div></div></div>
@@ -92,7 +131,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 </div></section>
 <main class="wrap">
  <h3 class="grp" id="apps">Apps And Files</h3><div class="grid" id="links"></div>
- <div class="cols"><div><h3 class="grp" id="decide">Decisions For You <span class="n" id="dc"></span></h3><div id="decisions"></div></div>
+ <div class="cols"><div><div class="decide-band" id="decide"><span class="lbl">Waiting On Max</span><h3>Decisions For You <span class="n" id="dc"></span></h3></div><div id="decisions"></div></div>
  <div class="side"><div><h3 class="grp">Pending <span class="n" id="pc"></span></h3><div id="pending"></div></div><div><h3 class="grp" id="work">Recent Work</h3><div id="recent"></div></div></div></div>
  <h3 class="grp" id="vt">Water Systems</h3><video id="vid" controls preload="none" playsinline></video>
  <div class="share"><button class="sbtn mw-hover" data-share><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Share</button><div id="msg"></div></div>
@@ -113,7 +152,7 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 role.textContent=d.agent+' · '+d.role;proj.textContent=d.project;stat.textContent=d.status;upd.textContent='Updated '+d.updated;
 facts.innerHTML=d.facts.map(f=>`<span class="chip">${esc(f)}</span>`).join('');
 if(d.model){mlink.href=t3d.href=h3d.href=d.model.url;mlink.querySelector('.img').style.backgroundImage=`url(${d.model.image})`}
-if(d.report&&d.report.items&&d.report.items.length){rep.hidden=false;rlab.textContent=d.report.type+' · '+new Date(d.report.date+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});const G=d.report.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);rsum.textContent=G.reduce((n,g)=>n+g.items.length,0)+' Updates';rlist.innerHTML=G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');repb.onclick=()=>tog(rep)}
+if(d.report&&d.report.items&&d.report.items.length){rep.hidden=false;rlab.textContent=d.report.type+' · '+new Date(d.report.date+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});const G=d.report.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);rsum.textContent=G.reduce((n,g)=>n+g.items.length,0)+' Updates';const acts=`<div class="rep-actions"><a class="mw-hover" href="#decide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/></svg>Decide</a><a class="mw-hover" href="#apps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Apps</a><a class="mw-hover" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5"/></svg>3D Model</a></div>`;rlist.innerHTML=acts+G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');repb.onclick=()=>tog(rep)}
 const A=d.attention||[];if(A.length){att.hidden=false;const c={};A.forEach(a=>c[a.level]=(c[a.level]||0)+1);asum.textContent=Object.entries(c).map(([k,n])=>n+' '+k+(n>1?'s':'')).join(' · ');alist.innerHTML=A.map(a=>`<li><span class="lv">${esc(a.level)}</span><b>${esc(a.title)}</b>: ${esc(a.note)}</li>`).join('');attb.onclick=()=>tog(att)}
 links.innerHTML=d.links.map(l=>`<a class="tile mw-hover" href="${esc(l.url)}" target="_blank" rel="noopener"><span class="ic">${sv(l.icon,'#171717')}</span><b>${esc(l.title)}</b><span>${esc(l.note)}</span></a>`).join('');
 decisions.innerHTML=d.decisions.map(x=>`<div class="acc"><button aria-expanded="false">${sv('q','#b7791f','mk')}<span class="at">${esc(x.title)}</span><span class="ch"></span></button><div class="ab"><div>${esc(x.note)}</div></div></div>`).join('');dc.textContent=d.decisions.length;

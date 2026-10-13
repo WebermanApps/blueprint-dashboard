@@ -44,6 +44,10 @@
   ],
   "recent": [
     {
+      "title": "Dashboard Style + Partial Submit",
+      "note": "Applied Max's Agent Dashboard picks; Swipe and This or That now have anytime Partial Submit and Deck Building links."
+    },
+    {
       "title": "One-Screen Cards On iPhone",
       "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card."
     },
@@ -66,10 +70,6 @@
     {
       "title": "Wall System",
       "note": "Steel stud, fiber-cement board, white painted textured plaster."
-    },
-    {
-      "title": "Pull-To-Refresh And Back Links",
-      "note": "Pull down to refresh, plus a link back to this dashboard, on every dream home app."
     }
   ],
   "links": [
