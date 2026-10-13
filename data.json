@@ -44,6 +44,10 @@
   ],
   "recent": [
     {
+      "title": "Your Apps On Top",
+      "note": "3D Model, Blueprint Swipe, This or That + Round 2, and Drawing Set sit under the header."
+    },
+    {
       "title": "Dashboard Style + Partial Submit",
       "note": "Applied Max's Agent Dashboard picks; Swipe and This or That now have anytime Partial Submit and Deck Building links."
     },
@@ -66,10 +70,6 @@
     {
       "title": "3D Model Roof Off",
       "note": "Opens with the roof off."
-    },
-    {
-      "title": "Wall System",
-      "note": "Steel stud, fiber-cement board, white painted textured plaster."
     }
   ],
   "links": [
