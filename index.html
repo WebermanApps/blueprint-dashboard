@@ -31,7 +31,7 @@ header.top .wrap{display:flex;align-items:center;gap:10px;min-height:52px}
 .hero p{margin:0;color:#525252;font-size:15px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.chip{border:1px solid #d4d4d4;background:#fff;font:700 11px Hind;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px}
 .mcard{display:block;margin-top:14px;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line)}
-.mcard .img{position:relative;aspect-ratio:900/420;background:#e9e4d8 url(model.jpg) center/cover;overflow:hidden}
+.mcard .img{position:relative;aspect-ratio:900/398;background:#e9e4d8 url(model.jpg) center/cover;overflow:hidden}
 .mcard .tag{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.92);font:700 10px Hind;letter-spacing:.14em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line)}
 .go{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border:2px solid var(--pri);background:#fff;color:var(--pri);font:700 14px Hind;letter-spacing:.14em;text-transform:uppercase;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
 .mcard:hover .go{background:var(--pri);color:#fafafa}.go svg{width:20px;height:20px}
@@ -66,6 +66,7 @@ nav.tabs a svg{width:22px;height:22px}nav.tabs a:hover,nav.tabs a.on{color:var(-
 @media(min-width:1800px){body{font-size:18px}.wrap{max-width:1680px;padding:0 48px}.hero{padding:48px 0}.hero h1{font-size:84px}.hero p{font-size:19px}
  .cols{grid-template-columns:repeat(3,1fr)}.cols>.side{display:contents}h3.grp{font-size:14px}.grid{grid-template-columns:repeat(6,1fr)}.tile{min-height:150px;padding:20px}.tile b{font-size:23px}.tile span{font-size:15px}
  .acc .at,.row b{font-size:17px}.row span,.acc .ab>div{font-size:16px}.go{min-height:60px;font-size:16px}}
+@media(min-width:1024px){nav.tabs{display:none}body{padding-bottom:0}video{max-width:1100px;margin:0 auto}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.mw-hover:hover{transform:none}}
 </style></head><body>
 <div class="rep" id="rep" hidden><div class="wrap"><button aria-expanded="false" id="repb"><span class="lab" id="rlab"></span><span class="sum" id="rsum"></span><span class="ch"></span></button><div class="ab"><div><ul id="rlist"></ul></div></div></div></div>
