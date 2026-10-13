@@ -34,7 +34,7 @@ footer{background:var(--bg);border-top:1px solid var(--bd);text-align:center;pad
 .upd{color:var(--mut);font-size:14px}
 </style></head><body>
 <header><div class="wrap"><div class="eyebrow" id="role">Blueprint</div><h1 id="proj">Weberman Residence</h1><div class="chips" id="facts"></div>
-<div class="status"><span class="dot"></span><p id="status" style="margin:0"></p></div><p class="upd" id="upd"></p></div></header>
+<div class="status"><span class="dot"></span><p id="stat" style="margin:0"></p></div><p class="upd" id="upd"></p></div></header>
 <main class="wrap">
 <div class="grid"><section class="card"><h2>Decisions For You <span class="count" id="dc"></span></h2><ul class="list" id="decisions"></ul></section>
 <div><section class="card" style="margin-top:28px"><h2>Pending <span class="count" id="pc"></span></h2><ul class="list" id="pending"></ul></section>
@@ -57,7 +57,7 @@ const svg=(k,c)=>`<svg class="mk" viewBox="0 0 24 24" fill="none" stroke="${c||'
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const li=(a,k,c)=>a.map(x=>`<li>${svg(k,c)}<div><b>${esc(x.title)}</b><span>${esc(x.note)}</span></div></li>`).join('');
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
-role.textContent=d.agent+' · '+d.role;proj.textContent=d.project;status.textContent=d.status;upd.textContent='Updated '+d.updated;
+role.textContent=d.agent+' · '+d.role;proj.textContent=d.project;stat.textContent=d.status;upd.textContent='Updated '+d.updated;
 facts.innerHTML=d.facts.map(f=>`<span class="chip">${esc(f)}</span>`).join('');
 decisions.innerHTML=li(d.decisions,'q','#b7791f');dc.textContent=d.decisions.length;
 pending.innerHTML=li(d.pending,'clock','#737373');pc.textContent=d.pending.length;
