@@ -1,177 +1,163 @@
 {
- "agent": "Blueprint",
- "role": "Dream Home Agent",
- "updated": "2026-10-13",
- "project": "Weberman Residence",
- "facts": [
-  "Thailand",
-  "~5,200 sf",
-  "3 Bed / 3.5 Bath",
-  "Sustainable Luxury"
- ],
- "status": "Design Development. 17-sheet set, 3D model and systems specs done. Waiting on your kitchen calls and wall plaster picks.",
- "decisions": [
-  {
-   "title": "Wall Texture And Accent Plaster",
-   "note": "This or That round offered. Waiting on your picks."
+  "agent": "Blueprint",
+  "role": "Dream Home Agent",
+  "updated": "2026-10-13",
+  "project": "Weberman Residence",
+  "facts": [
+    "Thailand",
+    "~5,200 sf",
+    "3 Bed / 3.5 Bath",
+    "Sustainable Luxury"
+  ],
+  "status": "Fresh Start. Kitchen photos fixed, 3D opens roof-off, wall standard in the drawings. Waiting on your kitchen calls and Round 3 picks.",
+  "decisions": [
+    {
+      "title": "Kitchen: Herb Nook To Corner",
+      "note": "Move the herb nook to the corner? Yes or no."
+    },
+    {
+      "title": "Kitchen: Brushed Stainless Faucet",
+      "note": "Confirm the faucet finish."
+    },
+    {
+      "title": "Kitchen: Built-In Stainless Fridge",
+      "note": "Confirm built-in over freestanding."
+    },
+    {
+      "title": "Wall Texture And Accent Plaster",
+      "note": "This or That round on request."
+    },
+    {
+      "title": "Round 3 This Or That",
+      "note": "Door hardware, dining table, exterior lights."
+    }
+  ],
+  "pending": [
+    {
+      "title": "Engineer Check",
+      "note": "Steel stud sizing and connections."
+    },
+    {
+      "title": "Deck Images",
+      "note": "Beds and bath-vanity swipe deck images."
+    }
+  ],
+  "recent": [
+    {
+      "title": "Fresh Start",
+      "note": "ptr.js v3, Submit to Blueprint, Fresh Start report bar."
+    },
+    {
+      "title": "Bigger Deck Photos On Phone",
+      "note": "Swipe deck photos now fill more of the iPhone screen."
+    },
+    {
+      "title": "Pull-To-Refresh And Back Links",
+      "note": "On every dream home app."
+    },
+    {
+      "title": "3D Model Roof Off",
+      "note": "Opens with the roof off."
+    },
+    {
+      "title": "Wall System",
+      "note": "Steel stud, fiber-cement board, white painted textured plaster."
+    },
+    {
+      "title": "Pull-To-Refresh And Back Links",
+      "note": "Pull down to refresh, plus a link back to this dashboard, on every dream home app."
+    },
+    {
+      "title": "Bigger Deck Photos On Phone",
+      "note": "Swipe deck photos now fill more of the iPhone screen."
+    },
+    {
+      "title": "3D Model Roof Off",
+      "note": "The model now opens with the roof off so you see the rooms first."
+    }
+  ],
+  "links": [
+    {
+      "title": "3D Viewer",
+      "note": "Walk the house model",
+      "url": "https://webermanapps.github.io/weberman-residence/",
+      "icon": "cube"
+    },
+    {
+      "title": "Kitchen Swipe Deck",
+      "note": "Swipe kitchen options",
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/kitchen",
+      "icon": "swipe"
+    },
+    {
+      "title": "Blueprint Swipe",
+      "note": "100 design photos",
+      "url": "https://webermanapps.github.io/blueprint-swipe/",
+      "icon": "swipe"
+    },
+    {
+      "title": "This Or That Home",
+      "note": "Round 1 photo pairs",
+      "url": "https://webermanapps.github.io/this-or-that-home/",
+      "icon": "split"
+    },
+    {
+      "title": "This Or That Round 2",
+      "note": "Second round of pairs",
+      "url": "https://webermanapps.github.io/this-or-that-home/round2/",
+      "icon": "split"
+    },
+    {
+      "title": "Drawing Set PDF",
+      "note": "17 sheets, DD set",
+      "url": "Weberman_Residence_DD_Set.pdf",
+      "icon": "doc"
+    }
+  ],
+  "video": {
+    "title": "Water Systems",
+    "src": "water_systems.mp4",
+    "poster": "poster.png"
   },
-  {
-   "title": "Kitchen: Herb Nook To Corner",
-   "note": "Move the herb nook to the corner? Yes or no."
-  },
-  {
-   "title": "Kitchen: Brushed Stainless Faucet",
-   "note": "Confirm the faucet finish."
-  },
-  {
-   "title": "Kitchen: Built-In Stainless Fridge",
-   "note": "Confirm built-in over freestanding."
-  },
-  {
-   "title": "Round 3 This Or That",
-   "note": "Door hardware, dining table, exterior lights."
-  },
-  {
-   "title": "Site Location",
-   "note": "Pick the site to design around."
-  },
-  {
-   "title": "Finish Tier",
-   "note": "Set the overall finish level."
-  },
-  {
-   "title": "Climbing Pavilion Design",
-   "note": "Choose a direction for the pavilion."
-  }
- ],
- "pending": [
-  {
-   "title": "Engineer Check",
-   "note": "Steel stud sizing and connections."
-  },
-  {
-   "title": "Deck Images",
-   "note": "Beds and bath-vanity swipe deck images."
-  }
- ],
- "recent": [
-  {
-   "title": "Pull-To-Refresh And Back Links",
-   "note": "Pull down to refresh, plus a link back to this dashboard, on every dream home app."
-  },
-  {
-   "title": "Bigger Deck Photos On Phone",
-   "note": "Swipe deck photos now fill more of the iPhone screen."
-  },
-  {
-   "title": "3D Model Roof Off",
-   "note": "The model now opens with the roof off so you see the rooms first."
-  },
-  {
-   "title": "Dashboard Redesign",
-   "note": "Rebuilt on the Home Guide layout with a one-tap 3D Model button."
-  },
-  {
-   "title": "Wall System",
-   "note": "Steel stud, fiber-cement board, white painted textured plaster."
-  },
-  {
-   "title": "White Trim And Inset Cabinetry",
-   "note": "Set as the interior standard."
-  },
-  {
-   "title": "17-Sheet BIM Drawing Set",
-   "note": "Design development set, ready to review."
-  },
-  {
-   "title": "Solar And Battery",
-   "note": "20 kWp solar with 30 kWh battery storage."
-  },
-  {
-   "title": "Rainwater",
-   "note": "80 m\u00b3 rainwater storage."
-  },
-  {
-   "title": "Well And Filtration",
-   "note": "Well water with whole-house filtration."
-  }
- ],
- "links": [
-  {
-   "title": "3D Viewer",
-   "note": "Walk the house model",
-   "url": "https://webermanapps.github.io/weberman-residence/",
-   "icon": "cube"
-  },
-  {
-   "title": "Kitchen Swipe Deck",
-   "note": "Swipe kitchen options",
-   "url": "https://webermanapps.github.io/blueprint-swipe/#/kitchen",
-   "icon": "swipe"
-  },
-  {
-   "title": "Blueprint Swipe",
-   "note": "100 design photos",
-   "url": "https://webermanapps.github.io/blueprint-swipe/",
-   "icon": "swipe"
-  },
-  {
-   "title": "This Or That Home",
-   "note": "Round 1 photo pairs",
-   "url": "https://webermanapps.github.io/this-or-that-home/",
-   "icon": "split"
-  },
-  {
-   "title": "This Or That Round 2",
-   "note": "Second round of pairs",
-   "url": "https://webermanapps.github.io/this-or-that-home/round2/",
-   "icon": "split"
-  },
-  {
-   "title": "Drawing Set PDF",
-   "note": "17 sheets, DD set",
-   "url": "Weberman_Residence_DD_Set.pdf",
-   "icon": "doc"
-  }
- ],
- "video": {
-  "title": "Water Systems",
-  "src": "water_systems.mp4",
-  "poster": "poster.png"
- },
- "report": {
-  "type": "Evening Report",
-  "date": "2026-10-13",
-  "items": [
-   {
-    "cat": "Today",
+  "report": {
+    "type": "Fresh Start",
+    "date": "2026-10-13",
     "items": [
-     "Walls switched to steel stud, cement board and white textured plaster, with white trim and inset cabinetry, in the 17-sheet set and 3D model.",
-     "3D model now opens roof-off.",
-     "Dashboard rebuilt in the Home Guide style and tuned for phone, laptop and TV.",
-     "Kitchen deck photos fixed on iPhone; back links and pull-to-refresh added to all dream home apps."
+      {
+        "cat": "Ready For You",
+        "items": [
+          "Kitchen Swipe Deck photos fixed on iPhone (photo is the hero now).",
+          "3D model opens roof-off so rooms show first.",
+          "Wall standard updated in the drawings: steel stud, cement board, white textured plaster."
+        ]
+      },
+      {
+        "cat": "Decide",
+        "items": [
+          "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
+          "Wall texture and accent plaster This or That, on request.",
+          "Round 3 picks: door hardware, dining table, exterior lights."
+        ]
+      },
+      {
+        "cat": "Pending",
+        "items": [
+          "Engineer check of steel stud sizing and connections.",
+          "Beds and bath-vanity swipe deck images still to generate."
+        ]
+      }
     ]
-   },
-   {
-    "cat": "Tomorrow",
-    "items": [
-     "Wall texture and accent plaster This or That, if you want it.",
-     "Submit button for swipe and This or That apps once the team picks a receiver.",
-     "Waiting on your three kitchen calls and Round 3 picks."
-    ]
-   }
+  },
+  "model": {
+    "title": "Open 3D Model",
+    "url": "https://webermanapps.github.io/weberman-residence/",
+    "image": "model.jpg"
+  },
+  "attention": [
+    {
+      "level": "Warning",
+      "title": "Engineer Check Pending",
+      "note": "Steel stud sizing and connections still need an engineer sign-off before the wall system is final."
+    }
   ]
- },
- "model": {
-  "title": "Open 3D Model",
-  "url": "https://webermanapps.github.io/weberman-residence/",
-  "image": "model.jpg"
- },
- "attention": [
-  {
-   "level": "Warning",
-   "title": "Engineer Check Pending",
-   "note": "Steel stud sizing and connections still need an engineer's sign-off before the wall system is final."
-  }
- ]
 }
