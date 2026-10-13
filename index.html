@@ -32,12 +32,17 @@ video{width:100%;border-radius:12px;background:#000;display:block}
 footer{background:var(--bg);border-top:1px solid var(--bd);text-align:center;padding:22px 18px}
 .mw-built{font-size:14px;color:var(--mut)}.mw-built a{color:var(--fg);display:inline-flex;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid rgba(10,10,10,.3)}.mw-built a:hover{border-color:var(--fg)}
 .upd{color:var(--mut);font-size:14px}
+@media(min-width:760px){.grid>section.card{margin-top:28px}}
+@media(min-width:1800px){body{font-size:18px}.wrap{max-width:1680px;padding:40px 48px}h2{font-size:36px}h1{font-size:84px}
+.grid{grid-template-columns:repeat(3,1fr);gap:28px}.side{display:contents}.side section.card{margin:28px 0!important}
+.links{grid-template-columns:repeat(3,1fr);gap:18px}a.lk{min-height:84px;padding:20px}a.lk b{font-size:24px}a.lk span,ul.list span{font-size:16px}
+video{max-width:1200px;margin:0 auto}.card{padding:24px}.status p{font-size:20px}}
 </style></head><body>
 <header><div class="wrap"><div class="eyebrow" id="role">Blueprint</div><h1 id="proj">Weberman Residence</h1><div class="chips" id="facts"></div>
 <div class="status"><span class="dot"></span><p id="stat" style="margin:0"></p></div><p class="upd" id="upd"></p></div></header>
 <main class="wrap">
 <div class="grid"><section class="card"><h2>Decisions For You <span class="count" id="dc"></span></h2><ul class="list" id="decisions"></ul></section>
-<div><section class="card" style="margin-top:28px"><h2>Pending <span class="count" id="pc"></span></h2><ul class="list" id="pending"></ul></section>
+<div class="side"><section class="card" style="margin-top:28px"><h2>Pending <span class="count" id="pc"></span></h2><ul class="list" id="pending"></ul></section>
 <section class="card"><h2>Recent Work</h2><ul class="list" id="recent"></ul></section></div></div>
 <section><h2>Apps And Files</h2><div class="links" id="links"></div></section>
 <section><h2 id="vt">Water Systems</h2><video id="vid" controls preload="none" playsinline></video></section>
