@@ -44,6 +44,10 @@
   ],
   "recent": [
     {
+      "title": "One-Screen Cards On iPhone",
+      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card."
+    },
+    {
       "title": "Fresh Start",
       "note": "ptr.js v3, Submit to Blueprint, Fresh Start report bar."
     },
@@ -66,14 +70,6 @@
     {
       "title": "Pull-To-Refresh And Back Links",
       "note": "Pull down to refresh, plus a link back to this dashboard, on every dream home app."
-    },
-    {
-      "title": "Bigger Deck Photos On Phone",
-      "note": "Swipe deck photos now fill more of the iPhone screen."
-    },
-    {
-      "title": "3D Model Roof Off",
-      "note": "The model now opens with the roof off so you see the rooms first."
     }
   ],
   "links": [
