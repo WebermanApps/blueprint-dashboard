@@ -9,7 +9,7 @@
   "3 Bed / 3.5 Bath",
   "Sustainable Luxury"
  ],
- "status": "Design Development. Drawing set, energy and water systems done. Kitchen Round 1 in review.",
+ "status": "Design Development. 17-sheet set, 3D model and systems specs done. Waiting on your kitchen calls and wall plaster picks.",
  "decisions": [
   {
    "title": "Wall Texture And Accent Plaster",
@@ -55,6 +55,14 @@
   }
  ],
  "recent": [
+  {
+   "title": "3D Model Roof Off",
+   "note": "The model now opens with the roof off so you see the rooms first."
+  },
+  {
+   "title": "Dashboard Redesign",
+   "note": "Rebuilt on the Home Guide layout with a one-tap 3D Model button."
+  },
   {
    "title": "Wall System",
    "note": "Steel stud, fiber-cement board, white painted textured plaster."
@@ -128,12 +136,36 @@
   "poster": "poster.png"
  },
  "report": {
-  "type": "Evening Report",
+  "type": "Morning Report",
   "date": "2026-10-13",
   "items": [
-   "Dashboard rebuilt on the Home Guide layout with a one-tap 3D Model button.",
-   "Waiting on your wall texture and accent plaster picks.",
-   "Next: engineer check of steel stud sizing, then beds and vanity deck images."
+   {
+    "cat": "Design",
+    "items": [
+     "Wall texture and accent plaster This or That is ready to build.",
+     "Three kitchen calls are waiting on you."
+    ]
+   },
+   {
+    "cat": "Drawings And Model",
+    "items": [
+     "Steel stud, cement board and white textured plaster walls, white trim and inset cabinetry are in the 17-sheet set.",
+     "3D model now opens roof-off."
+    ]
+   },
+   {
+    "cat": "Systems",
+    "items": [
+     "Solar, rainwater and well specs are complete.",
+     "Engineer check of steel stud sizing is pending."
+    ]
+   },
+   {
+    "cat": "Next",
+    "items": [
+     "Round 3 This or That: door hardware, dining table, exterior lights."
+    ]
+   }
   ]
  },
  "model": {
