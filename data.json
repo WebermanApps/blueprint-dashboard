@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Fresh Start. Kitchen photos fixed, 3D opens roof-off, wall standard in the drawings. Waiting on your kitchen calls and Round 3 picks.",
+  "status": "Fresh Start live. Kitchen photos fixed, 3D roof-off, wall standard in drawings. Your Apps on top; waiting on kitchen calls and Round 3 picks.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -35,41 +35,55 @@
   "pending": [
     {
       "title": "Engineer Check",
-      "note": "Steel stud sizing and connections."
+      "note": "Steel stud sizing and connections.",
+      "date": "Open"
     },
     {
       "title": "Deck Images",
-      "note": "Beds and bath-vanity swipe deck images."
+      "note": "Beds and bath-vanity swipe deck images.",
+      "date": "Open"
     }
   ],
   "recent": [
     {
+      "title": "Coach Layout Round 1",
+      "note": "Shared top bar, title before report, decisions under report, See All, tighter rhythm.",
+      "date": "Oct 13"
+    },
+    {
       "title": "Your Apps On Top",
-      "note": "3D Model, Blueprint Swipe, This or That + Round 2, and Drawing Set sit under the header."
+      "note": "3D Model, Blueprint Swipe, This or That + Round 2, and Drawing Set sit under the header.",
+      "date": "Oct 13"
     },
     {
       "title": "Dashboard Style + Partial Submit",
-      "note": "Applied Max's Agent Dashboard picks; Swipe and This or That now have anytime Partial Submit and Deck Building links."
+      "note": "Applied Max's Agent Dashboard picks; Swipe and This or That now have anytime Partial Submit and Deck Building links.",
+      "date": "Oct 13"
     },
     {
       "title": "One-Screen Cards On iPhone",
-      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card."
+      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card.",
+      "date": "Oct 13"
     },
     {
       "title": "Fresh Start",
-      "note": "ptr.js v3, Submit to Blueprint, Fresh Start report bar."
+      "note": "ptr.js v3, Submit to Blueprint, Fresh Start report bar.",
+      "date": "Oct 13"
     },
     {
       "title": "Bigger Deck Photos On Phone",
-      "note": "Swipe deck photos now fill more of the iPhone screen."
+      "note": "Swipe deck photos now fill more of the iPhone screen.",
+      "date": "Oct 13"
     },
     {
       "title": "Pull-To-Refresh And Back Links",
-      "note": "On every dream home app."
+      "note": "On every dream home app.",
+      "date": "Oct 13"
     },
     {
       "title": "3D Model Roof Off",
-      "note": "Opens with the roof off."
+      "note": "Opens with the roof off.",
+      "date": "Oct 13"
     }
   ],
   "links": [
