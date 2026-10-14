@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2026 \u00b7 17:30 ICT",
+  "updated": "Oct 14, 2026 · 18:06 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -34,9 +34,9 @@
   ],
   "pending": [
     {
-      "title": "Freeze Lift Cleared",
-      "note": "No real overnight Swipe/This or That submissions to apply (tests ignored).",
-      "date": "Oct 14"
+      "title": "Decks Waiting For Answers",
+      "note": "Furniture, Tile and Texture, Wood and Stone, the Ready 20-card starter, and Nozomi's Finish Details. No real submissions came in today.",
+      "date": "Open"
     },
     {
       "title": "Engineer Check",
@@ -49,12 +49,32 @@
       "date": "Open"
     },
     {
+      "title": "Resize Older Decks To 20",
+      "note": "Existing room and material decks that aren't 20 cards are marked for a later resize.",
+      "date": "Open"
+    },
+    {
       "title": "Site, Finish Tier, Climbing Pavilion",
       "note": "Still undecided.",
       "date": "Open"
     }
   ],
   "recent": [
+    {
+      "title": "Evening Report",
+      "note": "Today's dream-home work, open decisions and what's next.",
+      "date": "Oct 14"
+    },
+    {
+      "title": "Energy Choices Bottom Sheet",
+      "note": "Tap Pick to open a compact sheet with the 6 energy systems (Style Swipe pick B).",
+      "date": "Oct 14"
+    },
+    {
+      "title": "Max And Nozomi Decks",
+      "note": "Separate deck sections and launchers. Nozomi's Finish Details deck (20 cards) is ready. Bottom tabs removed, This or That rounds renamed.",
+      "date": "Oct 14"
+    },
     {
       "title": "R66 Deck Launcher Aligned",
       "note": "Kit 79aff73; Ready starter 20-card deck; refill builder + request watch routines.",
@@ -102,27 +122,12 @@
     },
     {
       "title": "One-Screen Cards On iPhone",
-      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card.",
+      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393×660; Share/Submit stay off-card.",
       "date": "Oct 13"
     },
     {
       "title": "Fresh Start",
       "note": "ptr.js v3, Submit to Blueprint, Fresh Start report bar.",
-      "date": "Oct 13"
-    },
-    {
-      "title": "Bigger Deck Photos On Phone",
-      "note": "Swipe deck photos now fill more of the iPhone screen.",
-      "date": "Oct 13"
-    },
-    {
-      "title": "Pull-To-Refresh And Back Links",
-      "note": "On every dream home app.",
-      "date": "Oct 13"
-    },
-    {
-      "title": "3D Model Roof Off",
-      "note": "Opens with the roof off.",
       "date": "Oct 13"
     }
   ],
@@ -170,32 +175,34 @@
     "poster": "poster.png"
   },
   "report": {
-    "type": "Morning Report",
+    "type": "Evening Report",
     "date": "2026-10-14",
-    "posted": "2026-10-14T13:40:00+07:00",
+    "posted": "2026-10-14T18:06:00+07:00",
     "items": [
       {
         "cat": "Today",
         "items": [
-          "Freeze lifted 07:38 ICT: pulled Blueprint inbox \u2014 only test rows; no design picks to apply.",
-          "Dashboard picks: plain title header (no house picture banner); Water Systems keeps drawn diagram and item list.",
-          "R65 Routines section live (Morning 4:47 / Evening 18:03 ICT)."
+          "Morning Report posted 4:56 AM. Overnight inbox pull found test rows only, so there were no design picks to apply.",
+          "Dashboard picks applied: plain title header, Water Systems drawn diagram plus item list, and a Routines section.",
+          "Decks tidied: newest unfinished pinned on top (Furniture, Tile and Texture, Wood and Stone), grouped Deck Library, and Open a New Deck with 5 categories and a Ready 20-card starter.",
+          "Max and Nozomi now have separate deck sections. Nozomi's Finish Details deck (20 cards, finishes only) is live in Blueprint Swipe.",
+          "Phone bottom tabs removed (Decide, Apps, Work, 3D now in the top bar). Round 2 and 3 renamed Material Picks and Hardware, Table and Lights This or That.",
+          "Energy Choices now opens a compact bottom sheet (your Style Swipe pick B)."
         ]
       },
       {
         "cat": "Decide",
         "items": [
           "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-          "Hardware, table and lights picks: door hardware, dining table, exterior lights. Wall texture This or That on request.",
-          "Phone bottom tabs on this dashboard: keep or remove (no-fixed-bar rule)."
+          "Hardware, Table and Lights This or That: door hardware, dining table, exterior lights. Wall texture This or That on request."
         ]
       },
       {
-        "cat": "Pending",
+        "cat": "Tomorrow",
         "items": [
-          "Engineer check of steel stud sizing and connections.",
-          "Beds and bath-vanity swipe deck images still to generate.",
-          "Still open: site location, finish tier, climbing pavilion details."
+          "Morning Report by 5:00 AM ICT.",
+          "Any deck answers you or Nozomi submit get applied, and that deck is refilled to 20 cards in the same categories.",
+          "Still pending: engineer check of steel stud sizing, beds and bath-vanity deck images, older decks resized to 20, plus site, finish tier and climbing pavilion."
         ]
       }
     ]
@@ -242,7 +249,7 @@
     {
       "group": "Source",
       "title": "Rainwater Cisterns T-1 / T-2 / T-3",
-      "note": "80 m\u00b3 total; irrigation only (purple pipe)."
+      "note": "80 m³ total; irrigation only (purple pipe)."
     },
     {
       "group": "Source",
@@ -262,7 +269,7 @@
     {
       "group": "Treat",
       "title": "Filters F-1 To F-5 + UV-1",
-      "note": "Sediment, iron/Mn, softener, carbon, 5 \u00b5m, UV."
+      "note": "Sediment, iron/Mn, softener, carbon, 5 µm, UV."
     },
     {
       "group": "Treat",
@@ -287,11 +294,11 @@
     {
       "group": "Rain",
       "title": "Gutters, Leaf Screens, First-Flush",
-      "note": "Metal roof \u2248815 m\u00b2; overflow to swale + soakaway."
+      "note": "Metal roof ≈815 m²; overflow to swale + soakaway."
     },
     {
       "group": "Rain",
-      "title": "Irrigation Zones Z1\u2013Z6",
+      "title": "Irrigation Zones Z1–Z6",
       "note": "IP-1 pump, disc filter; garden, maples, beds, orchard, courtyard, coop."
     }
   ],
@@ -674,7 +681,7 @@
       "id": "led",
       "title": "LED + Controls",
       "note": "Circuits and dimming.",
-      "detail": "LED throughout with simple scene dimming in living, kitchen, and master \u2014 no proprietary lock-in."
+      "detail": "LED throughout with simple scene dimming in living, kitchen, and master — no proprietary lock-in."
     },
     {
       "id": "ev",

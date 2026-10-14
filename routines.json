@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 14:50 ICT",
+  "updated": "2026-10-14 18:06 ICT",
   "routines": [
     {
       "name": "Blueprint Morning Report",
@@ -13,7 +13,7 @@
       "group": "Reports",
       "schedule_plain": "Daily At 6:03 PM ICT",
       "status": "on",
-      "last_run": "Oct 13, 6:10 PM"
+      "last_run": "Today 6:06 PM"
     },
     {
       "name": "Deck Request Watch",
