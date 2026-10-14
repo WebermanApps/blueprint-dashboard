@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "2026-10-14",
+  "updated": "Oct 14, 1:40 PM",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Morning Report live. Holding overnight deck results for Max's freeze cleanup; waiting on kitchen calls, Round 3 picks and the bottom-tabs call.",
+  "status": "Unfinished decks pinned at top (R63). Holding overnight results for freeze cleanup; kitchen done; Round 3 pending.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -59,6 +59,11 @@
     }
   ],
   "recent": [
+    {
+      "title": "R63 Unfinished Decks Pin + Catch-Up",
+      "note": "Newest unfinished Blueprint decks pinned above Your Apps; report.json posted; submit.js synced; skipped cards return for reword (R64).",
+      "date": "Oct 14"
+    },
     {
       "title": "Morning Report",
       "note": "Today's focus, decisions owed and pending items.",
@@ -180,7 +185,8 @@
           "Still open: site location, finish tier, climbing pavilion details."
         ]
       }
-    ]
+    ],
+    "posted": "2026-10-14T13:40:00+07:00"
   },
   "model": {
     "title": "Open 3D Model",
@@ -192,6 +198,156 @@
       "level": "Warning",
       "title": "Engineer Check Pending",
       "note": "Steel stud sizing and connections still need an engineer sign-off before the wall system is final."
+    }
+  ],
+  "unfinishedDecks": [
+    {
+      "name": "Furniture Character",
+      "answered": 0,
+      "total": 14,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/furniture",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Tile and Texture",
+      "answered": 0,
+      "total": 11,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/tile",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Wood and Stone Species",
+      "answered": 0,
+      "total": 14,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/species",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Lighting Fixtures",
+      "answered": 0,
+      "total": 11,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/lighting",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Hardware and Fixtures",
+      "answered": 0,
+      "total": 10,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/hardware",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Door and Window Details",
+      "answered": 0,
+      "total": 12,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/doors",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "Tie-Breakers",
+      "answered": 0,
+      "total": 13,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/tiebreak",
+      "kind": "swipe-r2"
+    },
+    {
+      "name": "This or That Round 2",
+      "answered": 0,
+      "total": 45,
+      "url": "https://webermanapps.github.io/this-or-that-home/round2/",
+      "kind": "tot-r2"
+    },
+    {
+      "name": "Round 3 This or That",
+      "answered": 0,
+      "total": null,
+      "url": "",
+      "kind": "tot-r3",
+      "note": "Pending \u2014 not built yet (door hardware, dining table, exterior lights)"
+    },
+    {
+      "name": "Entry and Exterior",
+      "answered": 0,
+      "total": 19,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/entry",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Pool and Landscape",
+      "answered": 0,
+      "total": 15,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/pool",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Courtyard and Engawa",
+      "answered": 0,
+      "total": 18,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/courtyard",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Kids' Rooms",
+      "answered": 0,
+      "total": 12,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/kids",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Master Bath",
+      "answered": 0,
+      "total": 14,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/bath",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Master Suite",
+      "answered": 0,
+      "total": 15,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/master",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Living and Conversation Pit",
+      "answered": 0,
+      "total": 14,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/living",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Sauna and Wellness",
+      "answered": 0,
+      "total": 20,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/wellness",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Gym",
+      "answered": 0,
+      "total": 18,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/gym",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Office and Music Studio",
+      "answered": 0,
+      "total": 22,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/office",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "Overall Style",
+      "answered": 0,
+      "total": 100,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/overall",
+      "kind": "swipe-r1"
+    },
+    {
+      "name": "This or That Home",
+      "answered": 0,
+      "total": 20,
+      "url": "https://webermanapps.github.io/this-or-that-home/",
+      "kind": "tot-r1"
     }
   ]
 }

@@ -115,6 +115,23 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 @media(min-width:2560px){.tile{min-height:160px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.mw-hover:hover{transform:none}}
 .hidden-extra{display:none}
+
+/* R63: unfinished decks pinned at top */
+.pin-decks{background:#fff;border-bottom:1px solid var(--line);padding:10px 0 8px;margin:0}
+.pin-decks .lab{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.pin-decks .lab .n{font:700 11px Hind;background:var(--sel);border:1px solid var(--pri);padding:0 6px}
+.pin-decks .none{font-size:14px;color:#525252;margin:0;padding:6px 0}
+.pin-decks .dks{display:grid;grid-template-columns:1fr;gap:6px}
+.pin-decks a.dk,.pin-decks .dk.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;padding:8px 12px;border:2px solid var(--pri);background:#fff;color:var(--pri);text-decoration:none;border-radius:0}
+.pin-decks a.dk:hover{background:var(--pri);color:#fafafa}
+.pin-decks .dk.pending{border-style:dashed;color:#525252;border-color:#a3a3a3}
+.pin-decks .dk b{font:700 15px/1.15 Khand,Hind,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1;min-width:0}
+.pin-decks .dk span{font:700 12px Hind;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;flex:none;color:var(--lagoon)}
+.pin-decks a.dk:hover span{color:#FBF1D6}
+.pin-decks .dk.pending span{color:#8a6a10}
+@media(min-width:640px){.pin-decks .dks{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.pin-decks .dks{grid-template-columns:1fr 1fr 1fr}}
+@media(min-width:1600px){.pin-decks a.dk,.pin-decks .dk.pending{min-height:52px}.pin-decks .dk b{font-size:20px}}
 </style><script src="ptr.js?v=4" defer></script></head><body>
 <header class="top"><div class="wrap">
   <a class="sbtn mw-hover apphome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">Apps Home</a>
@@ -128,6 +145,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
   <h1 id="proj">Weberman Residence</h1>
   <p class="lede" id="stat"></p>
 </div>
+
+
+<div class="pin-decks" id="pinDecks"><div class="wrap">
+  <div class="lab">Unfinished Decks <span class="n" id="pinCount">0</span></div>
+  <p class="none" id="pinNone" hidden>No unfinished decks right now.</p>
+  <div class="dks" id="pinList"></div>
+  <button type="button" class="seeall" id="pinSee" hidden>See All</button>
+</div></div>
 
 <div class="your-apps" id="yourApps"><div class="wrap">
   <div class="lab">Your Apps</div>
@@ -192,6 +217,20 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
   stat.textContent=d.status||'';
   const u='Updated '+(d.updated||'');
   updTop.textContent=u;
+
+  const UD=d.unfinishedDecks||[];
+  pinCount.textContent=UD.length;
+  if(!UD.length){pinNone.hidden=false;pinList.hidden=true;pinSee.hidden=true;}
+  else{
+    pinNone.hidden=true;pinList.hidden=false;
+    pinList.innerHTML=UD.map(x=>{
+      const prog=x.total!=null?(esc(x.answered)+'/'+esc(x.total)):(x.note?'Pending':'Open');
+      if(!x.url){return `<div class="dk pending"><b>${esc(x.name)}</b><span>${esc(prog)}</span></div>`;}
+      return `<a class="dk mw-hover" href="${esc(x.url)}"><b>${esc(x.name)}</b><span>${esc(prog)}</span></a>`;
+    }).join('');
+    lim5(pinList, pinSee, 'a.dk, .dk.pending');
+  }
+
   facts.innerHTML=(d.facts||[]).map(f=>`<span class="chip">${esc(f)}</span>`).join('')+
     `<span class="chip">${(d.decisions||[]).length} Decisions</span><span class="chip">${(d.pending||[]).length} Pending</span>`;
   if(d.model){mlink.href=t3d.href=h3d.href=d.model.url;const ya=document.getElementById('ya3d');if(ya)ya.href=d.model.url;mlink.querySelector('.img').style.backgroundImage=`url(${d.model.image})`}
