@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 1:40 PM",
+  "updated": "Oct 14, 2:20 PM",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Unfinished decks pinned at top (R63). Holding overnight results for freeze cleanup; kitchen done; Round 3 pending.",
+  "status": "Agent dashboard picks applied (plain title + water diagram and list). Freeze lift: no real overnight Blueprint submissions (tests only).",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -38,9 +38,9 @@
   ],
   "pending": [
     {
-      "title": "Overnight Deck Results",
-      "note": "Held until Max's freeze cleanup.",
-      "date": "Open"
+      "title": "Freeze Lift Cleared",
+      "note": "No real overnight Swipe/This or That submissions to apply (tests ignored).",
+      "date": "Oct 14"
     },
     {
       "title": "Engineer Check",
@@ -59,6 +59,11 @@
     }
   ],
   "recent": [
+    {
+      "title": "Agent Dashboard Picks + R65 + Freeze Lift",
+      "note": "Plain title header; Water Systems diagram + list; Routines section; overnight pull found tests only.",
+      "date": "Oct 14"
+    },
     {
       "title": "R63 Unfinished Decks Pin + Catch-Up",
       "note": "Newest unfinished Blueprint decks pinned above Your Apps; report.json posted; submit.js synced; skipped cards return for reword (R64).",
@@ -161,12 +166,14 @@
   "report": {
     "type": "Morning Report",
     "date": "2026-10-14",
+    "posted": "2026-10-14T13:40:00+07:00",
     "items": [
       {
         "cat": "Today",
         "items": [
-          "Hold overnight Blueprint Swipe and This or That results until Max's freeze cleanup; no changes from them yet.",
-          "Keep the drawing set, 3D model (roof off) and wall standard current: steel stud, fiber-cement board, lime plaster."
+          "Freeze lifted 07:38 ICT: pulled Blueprint inbox \u2014 only test rows; no design picks to apply.",
+          "Dashboard picks: plain title header (no house picture banner); Water Systems keeps drawn diagram and item list.",
+          "R65 Routines section live (Morning 4:47 / Evening 18:03 ICT)."
         ]
       },
       {
@@ -185,8 +192,7 @@
           "Still open: site location, finish tier, climbing pavilion details."
         ]
       }
-    ],
-    "posted": "2026-10-14T13:40:00+07:00"
+    ]
   },
   "model": {
     "title": "Open 3D Model",
@@ -348,6 +354,63 @@
       "total": 20,
       "url": "https://webermanapps.github.io/this-or-that-home/",
       "kind": "tot-r1"
+    }
+  ],
+  "waterItems": [
+    {
+      "group": "Source",
+      "title": "Rainwater Cisterns T-1 / T-2 / T-3",
+      "note": "80 m\u00b3 total; irrigation only (purple pipe)."
+    },
+    {
+      "group": "Source",
+      "title": "Drilled Well",
+      "note": "Primary house supply via full treatment."
+    },
+    {
+      "group": "Source",
+      "title": "Mains (PWA) Backup",
+      "note": "Into RT-1 only; 50 mm air gap + RPZ."
+    },
+    {
+      "group": "Treat",
+      "title": "RT-1 Aeration 2,000 L",
+      "note": "Oxidises iron and manganese."
+    },
+    {
+      "group": "Treat",
+      "title": "Filters F-1 To F-5 + UV-1",
+      "note": "Sediment, iron/Mn, softener, carbon, 5 \u00b5m, UV."
+    },
+    {
+      "group": "Treat",
+      "title": "TT-1 Treated Tank 4,000 L",
+      "note": "Then BP-1 VSD booster + 300 L pressure tank at 3 bar."
+    },
+    {
+      "group": "Supply",
+      "title": "Cold / Hot To Fixtures",
+      "note": "Kitchen, baths, laundry; HWH-1 heat pump 300 L + recirculation."
+    },
+    {
+      "group": "Supply",
+      "title": "RO-1 Drinking Tap",
+      "note": "Under kitchen sink."
+    },
+    {
+      "group": "Drain",
+      "title": "Grease Trap GT-1 + Septic + ATU",
+      "note": "Kitchen first; drain field after perc test; vent stack through roof."
+    },
+    {
+      "group": "Rain",
+      "title": "Gutters, Leaf Screens, First-Flush",
+      "note": "Metal roof \u2248815 m\u00b2; overflow to swale + soakaway."
+    },
+    {
+      "group": "Rain",
+      "title": "Irrigation Zones Z1\u2013Z6",
+      "note": "IP-1 pump, disc filter; garden, maples, beds, orchard, courtyard, coop."
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "updated": "2026-10-14 14:20 ICT",
+  "routines": [
+    {
+      "name": "Blueprint Morning Report",
+      "group": "Reports",
+      "schedule_plain": "Daily At 4:47 AM ICT",
+      "status": "on",
+      "last_run": "Today 4:57 AM"
+    },
+    {
+      "name": "Blueprint Evening Report",
+      "group": "Reports",
+      "schedule_plain": "Daily At 6:03 PM ICT",
+      "status": "on",
+      "last_run": "Oct 13, 6:10 PM"
+    }
+  ]
+}
