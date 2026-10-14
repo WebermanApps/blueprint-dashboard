@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2026 \u00b7 20:10 ICT",
+  "updated": "Oct 14, 2026 \u00b7 20:20 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Morning Report only (Evening retired 20:05). Ready To Swipe: 3 Max + 2 Nozomi. Swipe counts from real submissions.",
+  "status": "Morning Report only (Evening retired 20:05). Ready To Swipe: 3 Max + 2 Nozomi. Deck counts only (never swipes).",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
