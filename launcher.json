@@ -47,5 +47,16 @@
       "total": 14
     }
   ],
-  "ready": null
+  "ready": {
+    "name": "Blueprint: Rooms, Materials, Exterior, Systems, Style",
+    "url": "https://webermanapps.github.io/style-swipe/?date=blueprint-r66-starter",
+    "total": 20,
+    "categories": [
+      "rooms",
+      "materials",
+      "exterior",
+      "systems",
+      "style"
+    ]
+  }
 }

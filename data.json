@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2:45 PM",
+  "updated": "Oct 14, 2:50 PM",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Decks reorganized into Rooms, Materials, and Style groups. Open a New Deck launcher live (20-card requests).",
+  "status": "R66 Open a New Deck aligned: 20-card Ready deck waiting; refill after each submit.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -59,6 +59,11 @@
     }
   ],
   "recent": [
+    {
+      "title": "R66 Deck Launcher Aligned",
+      "note": "Kit 79aff73; Ready starter 20-card deck; refill builder + request watch routines.",
+      "date": "Oct 14"
+    },
     {
       "title": "Neater Deck Library + Open a New Deck",
       "note": "Grouped collapsible decks, R63 pin max 3, R66 launcher with 5 Blueprint categories.",
@@ -596,5 +601,5 @@
       "needsResize": false
     }
   ],
-  "deckNote": "New decks are 20 cards. Existing decks not at 20 are noted for a later resize (not rebuilt now)."
+  "deckNote": "New decks from Open a New Deck are exactly 20 cards. Existing room/material swipe decks keep their size until a later resize."
 }
