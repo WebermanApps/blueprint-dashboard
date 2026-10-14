@@ -1,0 +1,63 @@
+{
+  "agent": "blueprint",
+  "categories": [
+    {
+      "id": "rooms",
+      "label": "Rooms",
+      "blurb": "Kitchen, living, suites, kids, gym"
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
+      "blurb": "Wood, stone, tile, hardware, light"
+    },
+    {
+      "id": "exterior",
+      "label": "Exterior & Landscape",
+      "blurb": "Entry, courtyard, pool, garden"
+    },
+    {
+      "id": "systems",
+      "label": "Systems",
+      "blurb": "Water, power, climate, structure"
+    },
+    {
+      "id": "style",
+      "label": "Style",
+      "blurb": "Overall look, tie-breakers, This or That"
+    }
+  ],
+  "unfinished": [
+    {
+      "name": "Furniture",
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/furniture",
+      "answered": 0,
+      "total": 14
+    },
+    {
+      "name": "Tile and Texture",
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/tile",
+      "answered": 0,
+      "total": 11
+    },
+    {
+      "name": "Wood and Stone",
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/species",
+      "answered": 0,
+      "total": 14
+    }
+  ],
+  "ready": {
+    "name": "Blueprint: Rooms, Materials, Exterior, Systems, Style",
+    "url": "https://webermanapps.github.io/style-swipe/?date=blueprint-r66-starter",
+    "total": 20,
+    "categories": [
+      "rooms",
+      "materials",
+      "exterior",
+      "systems",
+      "style"
+    ]
+  },
+  "voter": "max"
+}

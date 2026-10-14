@@ -1,0 +1,38 @@
+{
+  "agent": "blueprint",
+  "voter": "nozomi",
+  "categories": [
+    {
+      "id": "finishes",
+      "label": "Finishes",
+      "blurb": "Plaster, paint, tile, color, door and window finishes"
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
+      "blurb": "Wood, stone, cabinetry fronts, hardware"
+    },
+    {
+      "id": "lighting",
+      "label": "Lighting & Fixtures",
+      "blurb": "Pendants, sconces, faucets, pulls, switches"
+    },
+    {
+      "id": "furniture",
+      "label": "Furniture & Fabric",
+      "blurb": "Sofa, chairs, textiles, furniture character"
+    }
+  ],
+  "unfinished": [],
+  "ready": {
+    "name": "Nozomi: Finish Details",
+    "url": "https://webermanapps.github.io/blueprint-swipe/#/nozomi-finishes",
+    "total": 20,
+    "categories": [
+      "finishes",
+      "materials",
+      "lighting",
+      "furniture"
+    ]
+  }
+}

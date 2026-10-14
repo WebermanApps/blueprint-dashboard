@@ -6,37 +6,37 @@
 <style>
 :root{--ink:#0a0a0a;--pri:#171717;--mute:#737373;--line:#e5e5e5;--bg:#fafafa;--card:#fff;--soft:#f5f5f5;--cream:#FBF8F2;--sel:#F3EDE2;--sage:#6b8f71;--amber:#b7791f;--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms;color-scheme:light}
 *{box-sizing:border-box}html,body{margin:0}
-body{font:16px/1.45 Hind,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+body{font:16px/1.45 Hind,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
 h1,h2,h3,.tile b,.t,.at{font-family:Khand,Arial,sans-serif;font-weight:700}
 .wrap{max-width:760px;margin:0 auto;padding:0 14px}
 a{color:var(--ink)}
 /* 1+4 Shared sticky top bar */
 header.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--lagoon)}
 header.top .wrap{display:flex;align-items:center;gap:8px;min-height:48px;flex-wrap:wrap}
-.apphome{letter-spacing:.16em!important;font-size:11px!important;padding:0 12px!important;color:var(--lagoon)!important;border-color:var(--lagoon)!important;margin-right:4px!important}
+.apphome{letter-spacing:.14em!important;font-size:13px!important;padding:0 12px!important;color:var(--lagoon)!important;border-color:var(--lagoon)!important;margin-right:4px!important}
 .apphome:hover{background:var(--lagoon)!important;color:#fafafa!important}
 .wm{font:700 17px Hind;text-transform:uppercase;letter-spacing:-.2px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.wm small{font-weight:400;color:var(--mute);letter-spacing:.1em;font-size:10px;margin-left:6px}
-.upd-top{font:600 11px Hind;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);white-space:nowrap;flex:none}
-.sbtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:2px solid var(--pri);color:var(--pri);font:700 12px Hind;letter-spacing:.1em;text-transform:uppercase;padding:0 12px;border-radius:0;cursor:pointer;text-decoration:none;flex:none}
+.wm small{font-weight:400;color:var(--mute);letter-spacing:.1em;font-size:13px;margin-left:6px}
+.upd-top{font:600 13px Hind;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);white-space:nowrap;flex:none}
+.sbtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#fff;border:2px solid var(--pri);color:var(--pri);font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase;padding:0 12px;border-radius:0;cursor:pointer;text-decoration:none;flex:none}
 .sbtn:hover{background:var(--pri);color:#fafafa}
-@media(max-width:480px){.wm small{display:none}.wm{font-size:15px}.sbtn{padding:0 8px;font-size:10px;letter-spacing:.06em}.upd-top{font-size:10px}}
+@media(max-width:480px){.wm small{display:none}.wm{font-size:15px}.sbtn{padding:0 8px;font-size:13px;letter-spacing:.04em}.upd-top{font-size:13px}.top-nav a{font-size:13px;padding:0 8px}}
 /* 2 Title before report */
-.titleblk{padding:12px 0 6px}.titleblk .brand{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0}
+.titleblk{padding:12px 0 6px}.titleblk .brand{font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252;margin:0}
 .titleblk h1{font-size:clamp(28px,7vw,40px);letter-spacing:-.5px;line-height:1;margin:4px 0 0}
 .titleblk .lede{margin:6px 0 0;color:#525252;font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* Your Apps */
 .your-apps{background:#fff;border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px}
-.your-apps .lab{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0 0 6px}
+.your-apps .lab{font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252;margin:0 0 6px}
 .your-apps .row{display:flex;flex-wrap:wrap;gap:6px}
-.your-apps a.ya{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;min-width:44px;padding:0 12px;border:2px solid var(--pri);background:#fff;color:var(--pri);text-decoration:none;font:700 11px/1.1 Hind;letter-spacing:.08em;text-transform:uppercase;border-radius:0;flex:1 1 calc(50% - 6px);text-align:center}
+.your-apps a.ya{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;min-width:44px;padding:0 12px;border:2px solid var(--pri);background:#fff;color:var(--pri);text-decoration:none;font:700 13px/1.1 Hind;letter-spacing:.06em;text-transform:uppercase;border-radius:0;flex:1 1 calc(50% - 6px);text-align:center}
 .your-apps a.ya:hover{background:var(--pri);color:#fafafa}
 .your-apps a.ya svg{width:16px;height:16px;flex:none}
 @media(min-width:640px){.your-apps a.ya{flex:1 1 0}}
 /* 3 Report one line expands + earlier fold-out numbered saffron */
 .rep{background:var(--sel);border-bottom:1px solid var(--line);margin:0}
 .rep button{all:unset;box-sizing:border-box;width:100%;min-height:44px;display:flex;align-items:center;gap:8px;cursor:pointer}
-.rep .lab{font:700 11px Hind;letter-spacing:.14em;text-transform:uppercase;flex:none}
+.rep .lab{font:700 13px Hind;letter-spacing:.12em;text-transform:uppercase;flex:none}
 .rep .sum{flex:1;font-size:14px;color:#525252;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ch{width:9px;height:9px;border-right:2px solid var(--pri);border-bottom:2px solid var(--pri);transform:rotate(45deg) translateY(-3px);transition:transform .25s var(--ease);flex:none;margin-right:4px}
 .open .ch{transform:rotate(225deg) translateY(-1px)}
@@ -45,23 +45,23 @@ header.top .wrap{display:flex;align-items:center;gap:8px;min-height:48px;flex-wr
 .rep ul{list-style:none;padding:0;margin:0;counter-reset:rn;font-size:14px}
 .rep li:not(.rc){counter-increment:rn;display:flex;gap:8px;align-items:flex-start;padding:6px 0;margin:0;border-top:1px solid var(--line)}
 .rep li:not(.rc):before{content:counter(rn);flex:none;width:1.4em;height:1.4em;border-radius:50%;background:#FBF1D6;color:#8a6a10;font:700 .75rem Khand,Hind,sans-serif;display:flex;align-items:center;justify-content:center;margin-top:.1em}
-.rep li.rc{border-top:0;margin:10px 0 2px;padding:0;font:700 11px Hind;letter-spacing:.12em;text-transform:uppercase;color:#525252}
+.rep li.rc{border-top:0;margin:10px 0 2px;padding:0;font:700 13px Hind;letter-spacing:.1em;text-transform:uppercase;color:#525252}
 .rep li.rc:before{display:none;content:none}
 .rep-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 6px}
-.rep-actions a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:2px solid var(--lagoon);color:var(--lagoon);background:#fff;text-decoration:none;font:700 11px Hind;letter-spacing:.1em;text-transform:uppercase}
+.rep-actions a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:2px solid var(--lagoon);color:var(--lagoon);background:#fff;text-decoration:none;font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase}
 .rep-actions a:hover{background:var(--lagoon);color:#fff}
 .att{background:#fff;border-left:4px solid var(--amber)}.att .ai{width:18px;height:18px;flex:none}
 #alist{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 @media(min-width:640px){#alist{grid-template-columns:1fr 1fr}}
 #alist li{border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:0;padding:10px 12px;background:#fff;margin:0}
-#alist li .lv{display:inline-block;border-radius:999px;padding:2px 8px;border:1px solid #e5e0d8;background:#FBF1D6;color:#8a6a12;margin:0 6px 4px 0;font:700 10px Hind;letter-spacing:.1em;text-transform:uppercase}
+#alist li .lv{display:inline-block;border-radius:999px;padding:2px 8px;border:1px solid #e5e0d8;background:#FBF1D6;color:#8a6a12;margin:0 6px 4px 0;font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase}
 /* 5 Decisions under report */
 .decide-wrap{margin:0 0 8px;border-bottom:1px solid var(--line)}
 .decide-band{margin:0;background:#FBF1D6;border:1px solid #F0E2B8;border-bottom:0;padding:10px 14px}
-.decide-band .lbl{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#8a6a10;display:block;margin-bottom:2px}
+.decide-band .lbl{font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#8a6a10;display:block;margin-bottom:2px}
 .decide-band h3{margin:0;font:700 1.05rem/1.15 Khand,Hind,sans-serif;letter-spacing:.04em;display:flex;align-items:center;gap:8px}
 .decide-band h3:before{content:"";width:3px;height:1em;background:var(--terra);flex:none}
-.decide-band .n{font:700 11px Hind;background:#fff;border:1px solid #8a6a10;padding:0 6px;margin-left:6px}
+.decide-band .n{font:700 13px Hind;background:#fff;border:1px solid #8a6a10;padding:0 6px;margin-left:6px}
 #decisions{border:1px solid #F0E2B8;border-top:0;background:#fff}
 .acc{border-bottom:1px solid #F0E2B8;border-left:3px solid var(--terra)}
 .acc:last-child{border-bottom:0}
@@ -73,29 +73,29 @@ header.top .wrap{display:flex;align-items:center;gap:8px;min-height:48px;flex-wr
 /* 12 Stat strip */
 .statstrip{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:8px 0;margin:0 0 8px;scrollbar-width:none}
 .statstrip::-webkit-scrollbar{display:none}
-.statstrip .chip{flex:none;border:1px solid #d4d4d4;background:#fff;font:700 11px Hind;letter-spacing:.08em;text-transform:uppercase;padding:8px 12px;border-radius:999px;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center}
+.statstrip .chip{flex:none;border:1px solid #d4d4d4;background:#fff;font:700 13px Hind;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center}
 /* 3D hero access — tighter */
 .hero{background:var(--cream);border-bottom:1px solid var(--line);padding:10px 0 12px;margin:0 0 8px}
 .mcard{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line)}
 .mcard .img{position:relative;aspect-ratio:900/320;background:#e9e4d8 url(model.jpg) center/cover;overflow:hidden}
-.mcard .tag{position:absolute;left:8px;top:8px;background:rgba(255,255,255,.92);font:700 10px Hind;letter-spacing:.12em;text-transform:uppercase;padding:3px 7px;border:1px solid var(--line)}
+.mcard .tag{position:absolute;left:8px;top:8px;background:rgba(255,255,255,.92);font:700 13px Hind;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border:1px solid var(--line)}
 .go{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border:2px solid var(--pri);background:#fff;color:var(--pri);font:700 13px Hind;letter-spacing:.12em;text-transform:uppercase}
 .mcard:hover .go{background:var(--pri);color:#fafafa}.go svg{width:18px;height:18px}
 /* 11 Tighter rhythm */
-h3.grp{font:700 11px Hind;letter-spacing:.14em;text-transform:uppercase;margin:16px 0 6px;display:flex;align-items:center;gap:6px;scroll-margin-top:56px}
-.n{font:700 11px Hind;background:var(--sel);border:1px solid var(--pri);padding:0 6px}
+h3.grp{font:700 13px Hind;letter-spacing:.12em;text-transform:uppercase;margin:16px 0 6px;display:flex;align-items:center;gap:6px;scroll-margin-top:56px}
+.n{font:700 13px Hind;background:var(--sel);border:1px solid var(--pri);padding:0 6px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .tile{background:#fff;border:1px solid var(--line);padding:10px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:6px;min-height:96px}
 .ic{width:32px;height:32px;background:var(--soft);display:grid;place-items:center;flex:none}.ic svg{width:18px;height:18px}
 .tile b{font-size:17px;line-height:1.1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.tile span{font-size:12px;color:var(--mute);line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tile span{font-size:13px;color:var(--mute);line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* 7+8+9 Condensed rows, See All, right dates */
 .row{display:grid;grid-template-columns:20px 1fr auto;gap:8px;align-items:start;background:#fff;border:1px solid var(--line);margin:0 0 -1px;padding:8px 10px;cursor:pointer}
 .row svg{width:18px;height:18px;flex:none;margin-top:2px}
 .row .body{min-width:0}.row b{font-size:14px;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .row .note{font-size:13px;color:var(--mute);display:none;margin-top:4px}.row.open .note{display:block}.row.open b{-webkit-line-clamp:unset}
-.row .date{font:600 11px Hind;color:var(--mute);white-space:nowrap;text-align:right;padding-top:2px}
-.seeall{display:inline-flex;align-items:center;justify-content:center;min-height:40px;margin:6px 0 0;padding:0 12px;border:2px solid var(--line);background:#fff;font:700 11px Hind;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.row .date{font:600 13px Hind;color:var(--mute);white-space:nowrap;text-align:right;padding-top:2px}
+.seeall{display:inline-flex;align-items:center;justify-content:center;min-height:40px;margin:6px 0 0;padding:0 12px;border:2px solid var(--line);background:#fff;font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
 .seeall:hover{border-color:var(--pri)}
 .cols{display:grid;gap:10px;margin-top:4px}
 @media(min-width:1024px){.cols{grid-template-columns:1fr 1fr;gap:16px}.grid{grid-template-columns:repeat(3,1fr)}.wrap{max-width:1180px;padding:0 28px}
@@ -105,10 +105,17 @@ video{width:100%;display:block;background:#000;border:1px solid var(--line);marg
 .mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.02);box-shadow:0 6px 18px rgba(10,10,10,.12)}.mw-hover:active{transform:scale(.98)}
 .share{text-align:center;margin:20px 0 6px}.share .sbtn{padding:0 24px}#msg{color:var(--mute);font-size:13px;min-height:18px;margin-top:4px}
 footer{text-align:center;padding:8px 14px 20px}.mw-built{font-size:13px;color:var(--mute)}.mw-built a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid rgba(10,10,10,.3)}
-nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
-nav.tabs a{flex:1;max-width:110px;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:#8a8a8a;font:700 10px Hind;letter-spacing:.08em;text-transform:uppercase}
-nav.tabs.hide{display:none}nav.tabs a svg{width:22px;height:22px}nav.tabs a:hover,nav.tabs a.on{color:var(--lagoon)}nav.tabs a.on{box-shadow:inset 0 -2px 0 var(--lagoon)}
-@media(min-width:1024px){nav.tabs{display:none}body{padding-bottom:0}video{max-width:1100px;margin:0 auto}}
+
+/* Kit overrides: ≥13px */
+.dl-sec h2,.dl-sec h3{font-size:18px!important}
+.dl-sec .dl-meta,.dl-sec .dl-pill,.dl-sec .dl-state,.dl-sec .dl-cat span{font-size:13px!important}
+.dl-sec .dl-cat b,.dl-sec .dl-rname,.dl-sec .dl-btn{font-size:14px!important}
+.routines-sec .rt-lab,.routines-sec .rt-meta{font-size:13px!important}
+/* R27: no fixed bottom tab bar — links live in top bar */
+.top-nav{display:flex;align-items:center;gap:4px;flex:none;flex-wrap:wrap}
+.top-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 10px;border:2px solid transparent;color:var(--pri);text-decoration:none;font:700 13px Hind;letter-spacing:.06em;text-transform:uppercase}
+.top-nav a:hover,.top-nav a.on{color:var(--lagoon);border-bottom-color:var(--lagoon)}
+@media(min-width:1024px){video{max-width:1100px;margin:0 auto}}
 a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3px}
 @media(min-width:1600px){body{font-size:20px}.wrap{max-width:min(2200px,90vw)}
  .titleblk h1{font-size:64px}.tile{min-height:140px;padding:18px}.tile b{font-size:26px}.row b{font-size:20px}.acc>button{min-height:60px}
@@ -125,20 +132,20 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 .water-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);background:#fff}
 .water-list li{display:grid;grid-template-columns:auto 1fr;gap:8px 10px;padding:10px 12px;border-top:1px solid var(--line);min-height:44px;align-items:start}
 .water-list li:first-child{border-top:0}
-.water-list .tag{font:700 10px Hind;letter-spacing:.1em;text-transform:uppercase;color:#05668D;background:#EAF3F7;border:1px solid #05668D;padding:2px 6px;align-self:start;margin-top:2px}
+.water-list .tag{font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase;color:#05668D;background:#EAF3F7;border:1px solid #05668D;padding:2px 6px;align-self:start;margin-top:2px}
 .water-list b{font:700 15px/1.2 Khand,Hind,sans-serif;display:block}
 .water-list span{font-size:13px;color:#525252;display:block;margin-top:2px}
 
 /* Deck library + launcher */
 .deck-lib{background:#fff;border-bottom:1px solid var(--line);padding:10px 0 12px;margin:0}
-.deck-lib .lab{font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0 0 4px}
-.deck-lib .note{font-size:12px;color:#737373;margin:0 0 8px}
+.deck-lib .lab{font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252;margin:0 0 4px}
+.deck-lib .note{font-size:13px;color:#737373;margin:0 0 8px}
 .dg{border:1px solid var(--line);background:#fff;margin:0 0 6px}
 .dg>button{all:unset;box-sizing:border-box;width:100%;min-height:44px;display:grid;grid-template-columns:20px 1fr auto 16px;align-items:center;gap:8px;padding:8px 12px;cursor:pointer}
 .dg>button .ic{width:20px;height:20px;display:grid;place-items:center}
 .dg>button .ic svg{width:18px;height:18px}
 .dg .gt{font:700 15px/1.15 Khand,Hind,sans-serif}
-.dg .gs{font:600 12px Hind;color:#525252}
+.dg .gs{font:600 13px Hind;color:#525252}
 .dg .ab>div{padding:0 8px 8px}
 .dg .drows{display:grid;gap:4px}
 .dg a.drow,.dg .drow.pending{display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;min-height:44px;padding:6px 8px;border:1px solid #eee;text-decoration:none;color:inherit;background:#FDFBF6}
@@ -147,13 +154,25 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 .dg .drow .di{width:28px;height:28px;background:#EAF3F7;display:grid;place-items:center}
 .dg .drow .di svg{width:16px;height:16px;stroke:#05668D}
 .dg .drow .nm{font:700 14px/1.15 Khand,Hind,sans-serif;display:block}
-.dg .drow .meta{font-size:11px;color:#737373}
+.dg .drow .meta{font-size:13px;color:#737373}
 .dg .bar{height:4px;background:#e5e5e5;margin-top:4px;border-radius:2px;overflow:hidden;max-width:160px}
 .dg .bar i{display:block;height:100%;background:#0B6E4F;border-radius:2px}
-.dg .pct{font:700 11px Hind;color:var(--lagoon);white-space:nowrap;text-align:right}
+.dg .pct{font:700 13px Hind;color:var(--lagoon);white-space:nowrap;text-align:right}
 .dg .drow.done .pct{color:#0B6E4F}
 @media(min-width:900px){.dg .drows{grid-template-columns:1fr 1fr}}
 @media(min-width:1600px){.dg .drows{grid-template-columns:1fr 1fr 1fr}.dg>button{min-height:52px}.dg .gt{font-size:20px}}
+
+/* Max / Nozomi deck sections */
+.who-sec{background:#fff;border-bottom:1px solid var(--line);padding:12px 0 14px;margin:0}
+.who-sec .who-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 6px;flex-wrap:wrap}
+.who-sec .who-h h2{font:700 22px/1.1 Khand,Hind,sans-serif;margin:0;letter-spacing:.02em}
+.who-sec .who-h .who-tag{font:700 13px Hind;letter-spacing:.1em;text-transform:uppercase;color:#05668D;background:#EAF3F7;border:1px solid #05668D;padding:3px 8px}
+.who-sec.nozomi .who-h .who-tag{color:#7A4E1D;background:#F8F0E6;border-color:#7A4E1D}
+.who-sec .who-blurb{font-size:13px;color:#525252;margin:0 0 8px}
+.who-sec .deck-lib{border-bottom:0;padding:8px 0 0;background:transparent}
+.who-sec .dl-host{max-width:760px;margin:0 auto;padding:0 14px}
+@media(min-width:1024px){.who-sec .dl-host{max-width:1180px;padding:0 28px}}
+@media(min-width:1600px){.who-sec .dl-host{max-width:min(2200px,90vw)}}
 #deckLaunch{max-width:760px;margin:8px auto 0;padding:0 14px}
 @media(min-width:1024px){#deckLaunch{max-width:1180px;padding:0 28px}}
 @media(min-width:1600px){#deckLaunch{max-width:min(2200px,90vw)}}
@@ -161,6 +180,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 <header class="top"><div class="wrap">
   <a class="sbtn mw-hover apphome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">Apps Home</a>
   <div class="wm">Blueprint<small>Dream Home</small></div>
+  <nav class="top-nav" aria-label="Page">
+    <a href="#decide">Decide</a>
+    <a href="#apps">Apps</a>
+    <a href="#work">Work</a>
+    <a id="t3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener">3D</a>
+  </nav>
   <span class="upd-top" id="updTop">Updated</span>
   <a class="sbtn mw-hover" id="h3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener">3D Model</a>
 </div></header>
@@ -172,13 +197,31 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 </div>
 
 
-<div id="deckLaunch" data-launcher="launcher.json"></div>
+<section class="who-sec max" id="maxDecks" aria-labelledby="maxDecksH">
+  <div class="wrap">
+    <div class="who-h"><h2 id="maxDecksH">Max's Decks</h2><span class="who-tag">Decision-maker</span></div>
+    <p class="who-blurb">Rooms, layout, structure, systems, style, and shared material decks.</p>
+  </div>
+  <div class="dl-host" id="deckLaunchMax" data-launcher="launcher-max.json" data-voter="max"></div>
+  <div class="deck-lib" id="deckLibMax"><div class="wrap">
+    <div class="lab">Deck Library</div>
+    <p class="note" id="deckNoteMax"></p>
+    <div id="deckGroupsMax"></div>
+  </div></div>
+</section>
 
-<div class="deck-lib" id="deckLib"><div class="wrap">
-  <div class="lab">Deck Library</div>
-  <p class="note" id="deckNote"></p>
-  <div id="deckGroups"></div>
-</div></div>
+<section class="who-sec nozomi" id="nozomiDecks" aria-labelledby="nozomiDecksH">
+  <div class="wrap">
+    <div class="who-h"><h2 id="nozomiDecksH">Nozomi's Decks</h2><span class="who-tag">Finishes</span></div>
+    <p class="who-blurb">Finish details only — plaster, tile, wood and stone, cabinetry, hardware, fixtures, lighting, fabrics. Not layout, structure, or systems.</p>
+  </div>
+  <div class="dl-host" id="deckLaunchNozomi" data-launcher="launcher-nozomi.json" data-voter="nozomi"></div>
+  <div class="deck-lib" id="deckLibNozomi"><div class="wrap">
+    <div class="lab">Deck Library</div>
+    <p class="note" id="deckNoteNozomi"></p>
+    <div id="deckGroupsNozomi"></div>
+  </div></div>
+</section>
 
 <div class="your-apps" id="yourApps"><div class="wrap">
   <div class="lab">Your Apps</div>
@@ -186,7 +229,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
     <a class="ya mw-hover" id="ya3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>3D Model</a>
     <a class="ya mw-hover" href="https://webermanapps.github.io/blueprint-swipe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="16"/><path d="M2 21h20"/></svg>Blueprint Swipe</a>
     <a class="ya mw-hover" href="https://webermanapps.github.io/this-or-that-home/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/></svg>This or That</a>
-    <a class="ya mw-hover" href="https://webermanapps.github.io/this-or-that-home/round2/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/></svg>Round 2</a>
+    <a class="ya mw-hover" href="https://webermanapps.github.io/this-or-that-home/round2/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/></svg>Material Picks</a>
     <a class="ya mw-hover" href="Weberman_Residence_DD_Set.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/></svg>Drawing Set</a>
   </div>
 </div></div>
@@ -213,11 +256,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
   <h3 class="grp" id="vt">Water Systems</h3>
   <div class="wsplit">
    <div>
-    <div class="lab" style="font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0 0 6px">Drawn Diagram</div>
+    <div class="lab" style="font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252;margin:0 0 6px">Drawn Diagram</div>
     <video id="vid" controls preload="none" playsinline poster="poster.png"></video>
    </div>
    <div>
-    <div class="lab" style="font:700 11px Hind;letter-spacing:.16em;text-transform:uppercase;color:#525252;margin:0 0 6px">Item List</div>
+    <div class="lab" style="font:700 13px Hind;letter-spacing:.14em;text-transform:uppercase;color:#525252;margin:0 0 6px">Item List</div>
     <ul class="water-list" id="wlist"></ul>
    </div>
   </div>
@@ -226,11 +269,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
  <div class="share"><button class="sbtn mw-hover" data-share type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Share</button><div id="msg"></div></div>
 </main>
 <footer><div class="mw-built"><a href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a></div></footer>
-<nav class="tabs"><a href="https://webermanapps.github.io/a-o956qercs5ubd57y/" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9H3z"/><path d="M10 20v-6h4v6"/></svg>Apps</a>
-<a id="t3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>3D Model</a>
-<a href="#decide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/></svg>Decide</a>
-<a href="#apps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Apps</a>
-<a href="#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Work</a></nav>
 <script>
 const I={cube:'<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/>',swipe:'<rect x="6" y="3" width="12" height="16"/><path d="M2 21h20"/>',split:'<rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/>',doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/>',q:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
 const sv=(k,c,cl)=>`<svg ${cl?'class="'+cl+'"':''} viewBox="0 0 24 24" fill="none" stroke="${c||'currentColor'}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${I[k]||I.doc}</svg>`;
@@ -255,28 +293,33 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 
   const ICN={room:'<path d="M3 11l9-7 9 7v9H3z"/><path d="M10 20v-6h4v6"/>',mat:'<rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/>',style:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
   const isvg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICN[k]||ICN.room}</svg>`;
-  if(d.deckNote) deckNote.textContent=d.deckNote;
-  const groups=d.deckGroups||[], all=d.decks||[];
-  deckGroups.innerHTML=groups.map(g=>{
-    const items=all.filter(x=>x.group===g.id);
-    const done=items.filter(x=>x.done).length;
-    const openN=items.filter(x=>!x.done).length;
-    const sum=items.length+' deck'+(items.length===1?'':'s')+' · '+done+' done'+(openN?' · '+openN+' open':'');
-    const rows=items.map(x=>{
-      const tot=x.total!=null?x.total:20;
-      const ans=x.done?tot:(x.answered||0);
-      const pct=tot?Math.min(100,Math.round(100*ans/tot)):0;
-      const prog=x.pending?'Pending':(x.done?'Done':(ans+'/'+tot));
-      const cls='drow'+(x.done?' done':'')+(x.pending?' pending':'');
-      const bar='<div class="bar" aria-hidden="true"><i style="width:'+pct+'%"></i></div>';
-      const body='<span class="di">'+isvg(x.icon||g.icon)+'</span><div><span class="nm">'+esc(x.name)+'</span><span class="meta">'+esc(x.full||'')+(x.needsResize?' · resize to 20 later':'')+'</span>'+bar+'</div><span class="pct">'+esc(prog)+'</span>';
-      if(x.pending||!x.url) return '<div class="'+cls+'">'+body+'</div>';
-      return '<a class="'+cls+' mw-hover" href="'+esc(x.url)+'">'+body+'</a>';
+  function paintLib(host, noteEl, groups, all, note, openId){
+    if(noteEl && note) noteEl.textContent=note;
+    if(!host) return;
+    host.innerHTML=(groups||[]).map(g=>{
+      const items=all.filter(x=>x.group===g.id);
+      const done=items.filter(x=>x.done).length;
+      const openN=items.filter(x=>!x.done).length;
+      const sum=items.length+' deck'+(items.length===1?'':'s')+' · '+done+' done'+(openN?' · '+openN+' open':'');
+      const rows=items.map(x=>{
+        const tot=x.total!=null?x.total:20;
+        const ans=x.done?tot:(x.answered||0);
+        const pct=tot?Math.min(100,Math.round(100*ans/tot)):0;
+        const prog=x.pending?'Pending':(x.done?'Done':(ans+'/'+tot));
+        const cls='drow'+(x.done?' done':'')+(x.pending?' pending':'');
+        const bar='<div class="bar" aria-hidden="true"><i style="width:'+pct+'%"></i></div>';
+        const body='<span class="di">'+isvg(x.icon||g.icon)+'</span><div><span class="nm">'+esc(x.name)+'</span><span class="meta">'+esc(x.full||'')+(x.needsResize?' · resize to 20 later':'')+'</span>'+bar+'</div><span class="pct">'+esc(prog)+'</span>';
+        if(x.pending||!x.url) return '<div class="'+cls+'">'+body+'</div>';
+        return '<a class="'+cls+' mw-hover" href="'+esc(x.url)+'">'+body+'</a>';
+      }).join('');
+      const isOpen=(openId?g.id===openId:g.id==='materials') && openN>0;
+      return '<div class="dg'+(isOpen?' open':'')+'" data-g="'+esc(g.id)+'"><button type="button" aria-expanded="'+(isOpen?'true':'false')+'"><span class="ic">'+isvg(g.icon)+'</span><span class="gt">'+esc(g.name)+'</span><span class="gs">'+esc(sum)+'</span><span class="ch"></span></button><div class="ab"><div><div class="drows">'+rows+'</div></div></div></div>';
     }).join('');
-    const isOpen=g.id==='materials' && openN>0;
-    return '<div class="dg'+(isOpen?' open':'')+'" data-g="'+esc(g.id)+'"><button type="button" aria-expanded="'+(isOpen?'true':'false')+'"><span class="ic">'+isvg(g.icon)+'</span><span class="gt">'+esc(g.name)+'</span><span class="gs">'+esc(sum)+'</span><span class="ch"></span></button><div class="ab"><div><div class="drows">'+rows+'</div></div></div></div>';
-  }).join('');
-  deckGroups.querySelectorAll('.dg').forEach(el=>{el.querySelector('button').onclick=()=>tog(el)});
+    host.querySelectorAll('.dg').forEach(el=>{el.querySelector('button').onclick=()=>tog(el)});
+  }
+  const allDecks=d.decks||[];
+  paintLib(document.getElementById('deckGroupsMax'), document.getElementById('deckNoteMax'), d.deckGroups||[], allDecks.filter(x=>(x.owner||'max')!=='nozomi'), d.deckNote, 'materials');
+  paintLib(document.getElementById('deckGroupsNozomi'), document.getElementById('deckNoteNozomi'), d.nozomiDeckGroups||[], allDecks.filter(x=>x.owner==='nozomi'), d.nozomiDeckNote, 'finishes');
 
   facts.innerHTML=(d.facts||[]).map(f=>`<span class="chip">${esc(f)}</span>`).join('')+
     `<span class="chip">${(d.decisions||[]).length} Decisions</span><span class="chip">${(d.pending||[]).length} Pending</span>`;
@@ -315,9 +358,41 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
   if(d.video){vt.textContent=d.video.title;vid.src=d.video.src;if(d.video.poster)vid.poster=d.video.poster}
 });
 document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u=location.href.split('#')[0];try{if(navigator.share)await navigator.share({title:document.title,url:u});else{await navigator.clipboard.writeText(u);msg.textContent='Link Copied'}}catch(e){}});
-const tabs=[...document.querySelectorAll('nav.tabs a[href^="#"]')];tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('on'));t.classList.add('on')}));
-const nv=document.querySelector('nav.tabs'),shr=document.querySelector('.share');const nvf=()=>nv&&shr&&nv.classList.toggle('hide',shr.getBoundingClientRect().top<innerHeight+40);addEventListener('scroll',nvf,{passive:true});addEventListener('resize',nvf);nvf();
+const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.forEach(a=>a.addEventListener('click',()=>{topNav.forEach(x=>x.classList.remove('on'));a.classList.add('on')}));
 </script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
 <script src="https://webermanapps.github.io/style-swipe/kit/deck-launcher.js?v=79aff73" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script></body></html>
+<script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
+<script>
+/* Tag Nozomi launcher deck-requests with voter:nozomi (kit 79aff73 has no voter field). */
+(function(){
+  function wrap(){
+    if(!window.MWSubmit || MWSubmit._voterWrap) return;
+    var orig = MWSubmit.send.bind(MWSubmit);
+    MWSubmit.send = function(o){
+      o = o || {};
+      try{
+        var v = null;
+        if(o.app==='deck-launcher'){
+          var nbox = document.getElementById('deckLaunchNozomi');
+          var mbox = document.getElementById('deckLaunchMax');
+          /* Prefer explicit voter on active launcher host via last click target */
+          if(MWSubmit._lastVoter) v = MWSubmit._lastVoter;
+          else if(nbox && (!mbox || (nbox.querySelector('.dl-btn') && document.activeElement && nbox.contains(document.activeElement)))) v = 'nozomi';
+        }
+        if(v){ o.voter = v; if(o.results && typeof o.results==='object') o.results.voter = v; }
+      }catch(e){}
+      return orig(o);
+    };
+    MWSubmit._voterWrap = 1;
+    document.addEventListener('click', function(e){
+      var h = e.target && e.target.closest && e.target.closest('[data-voter]');
+      if(h) MWSubmit._lastVoter = h.getAttribute('data-voter');
+    }, true);
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(wrap, 0); });
+  else setTimeout(wrap, 0);
+  window.addEventListener('load', wrap);
+})();
+</script>
+</body></html>

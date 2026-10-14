@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2:50 PM",
+  "updated": "Oct 14, 2026 \u00b7 15:30 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "R66 Open a New Deck aligned: 20-card Ready deck waiting; refill after each submit.",
+  "status": "Max and Nozomi each have their own decks and launchers. Nozomi focuses on finish details.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -28,7 +28,7 @@
       "note": "This or That round on request."
     },
     {
-      "title": "Round 3 This Or That",
+      "title": "Hardware, Table and Lights This or That",
       "note": "Door hardware, dining table, exterior lights."
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "title": "Your Apps On Top",
-      "note": "3D Model, Blueprint Swipe, This or That + Round 2, and Drawing Set sit under the header.",
+      "note": "3D Model, Blueprint Swipe, This or That + Material Picks, and Drawing Set sit under the header.",
       "date": "Oct 13"
     },
     {
@@ -156,8 +156,8 @@
       "icon": "split"
     },
     {
-      "title": "This Or That Round 2",
-      "note": "Second round of pairs",
+      "title": "Material Picks This or That",
+      "note": "Material picks photo pairs",
       "url": "https://webermanapps.github.io/this-or-that-home/round2/",
       "icon": "split"
     },
@@ -190,7 +190,7 @@
         "cat": "Decide",
         "items": [
           "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-          "Round 3 picks: door hardware, dining table, exterior lights. Wall texture This or That on request.",
+          "Hardware, table and lights picks: door hardware, dining table, exterior lights. Wall texture This or That on request.",
           "Phone bottom tabs on this dashboard: keep or remove (no-fixed-bar rule)."
         ]
       },
@@ -222,21 +222,24 @@
       "url": "https://webermanapps.github.io/blueprint-swipe/#/furniture",
       "answered": 0,
       "total": 14,
-      "pending": false
+      "pending": false,
+      "owner": "max"
     },
     {
       "name": "Tile and Texture",
       "url": "https://webermanapps.github.io/blueprint-swipe/#/tile",
       "answered": 0,
       "total": 11,
-      "pending": false
+      "pending": false,
+      "owner": "max"
     },
     {
       "name": "Wood and Stone",
       "url": "https://webermanapps.github.io/blueprint-swipe/#/species",
       "answered": 0,
       "total": 14,
-      "pending": false
+      "pending": false,
+      "owner": "max"
     }
   ],
   "waterItems": [
@@ -325,7 +328,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "living",
@@ -338,7 +342,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "kitchen",
@@ -351,7 +356,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "office",
@@ -364,7 +370,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "gym",
@@ -377,7 +384,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "wellness",
@@ -390,7 +398,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": false
+      "needsResize": false,
+      "owner": "max"
     },
     {
       "id": "master",
@@ -403,7 +412,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "bath",
@@ -416,7 +426,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "kids",
@@ -429,7 +440,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "pool",
@@ -442,7 +454,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "courtyard",
@@ -455,7 +468,8 @@
       "pending": false,
       "group": "rooms",
       "icon": "room",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "species",
@@ -468,7 +482,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "tile",
@@ -481,7 +496,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "hardware",
@@ -494,7 +510,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "lighting",
@@ -507,7 +524,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "doors",
@@ -520,7 +538,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "furniture",
@@ -533,7 +552,8 @@
       "pending": false,
       "group": "materials",
       "icon": "mat",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "overall",
@@ -546,7 +566,8 @@
       "pending": false,
       "group": "style",
       "icon": "style",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "tiebreak",
@@ -559,7 +580,8 @@
       "pending": false,
       "group": "style",
       "icon": "style",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "tot1",
@@ -572,12 +594,13 @@
       "pending": false,
       "group": "style",
       "icon": "style",
-      "needsResize": false
+      "needsResize": false,
+      "owner": "max"
     },
     {
       "id": "tot2",
-      "name": "Round 2",
-      "full": "This or That Round 2",
+      "name": "Material Picks This or That",
+      "full": "Material Picks This or That",
       "answered": 0,
       "total": 45,
       "url": "https://webermanapps.github.io/this-or-that-home/round2/",
@@ -585,12 +608,13 @@
       "pending": false,
       "group": "style",
       "icon": "style",
-      "needsResize": true
+      "needsResize": true,
+      "owner": "max"
     },
     {
       "id": "tot3",
-      "name": "Round 3",
-      "full": "Round 3 This or That",
+      "name": "Hardware, Table and Lights This or That",
+      "full": "Hardware, dining table, and exterior lights This or That",
       "answered": 0,
       "total": null,
       "url": "",
@@ -598,8 +622,31 @@
       "pending": true,
       "group": "style",
       "icon": "style",
+      "needsResize": false,
+      "owner": "max"
+    },
+    {
+      "id": "nozomi-finishes",
+      "name": "Finish Details",
+      "full": "Nozomi: Finish Details (plaster, tile, wood, stone, cabinets, hardware, lights, fabrics)",
+      "answered": 0,
+      "total": 20,
+      "url": "https://webermanapps.github.io/blueprint-swipe/#/nozomi-finishes",
+      "done": false,
+      "pending": false,
+      "group": "finishes",
+      "icon": "mat",
+      "owner": "nozomi",
       "needsResize": false
     }
   ],
-  "deckNote": "New decks from Open a New Deck are exactly 20 cards. Existing room/material swipe decks keep their size until a later resize."
+  "deckNote": "Max's decks: rooms, structure, systems, style, and shared material decks. New decks from Open a New Deck are exactly 20 cards.",
+  "nozomiDeckGroups": [
+    {
+      "id": "finishes",
+      "name": "Finish Details",
+      "icon": "mat"
+    }
+  ],
+  "nozomiDeckNote": "Nozomi picks finishes only (~80%+ materials and fixtures). No layout, structure, or systems. New decks are 20 cards."
 }
