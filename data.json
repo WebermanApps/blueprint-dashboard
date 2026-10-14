@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2026 · 18:06 ICT",
+  "updated": "Oct 14, 2026 \u00b7 19:40 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Max and Nozomi each have their own decks and launchers. Nozomi focuses on finish details.",
+  "status": "Ready Deck Shelf (R66): Materials, Exterior, Systems, Style for Max; Nozomi finishes shelf. Request picker retired.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -81,7 +81,7 @@
       "date": "Oct 14"
     },
     {
-      "title": "Neater Deck Library + Open a New Deck",
+      "title": "Neater Deck Library + Ready Shelf",
       "note": "Grouped collapsible decks, R63 pin max 3, R66 launcher with 5 Blueprint categories.",
       "date": "Oct 14"
     },
@@ -122,7 +122,7 @@
     },
     {
       "title": "One-Screen Cards On iPhone",
-      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393×660; Share/Submit stay off-card.",
+      "note": "Swipe and This or That fit picture, labels, votes, Notes and progress on one screen at 393\u00d7660; Share/Submit stay off-card.",
       "date": "Oct 13"
     },
     {
@@ -249,7 +249,7 @@
     {
       "group": "Source",
       "title": "Rainwater Cisterns T-1 / T-2 / T-3",
-      "note": "80 m³ total; irrigation only (purple pipe)."
+      "note": "80 m\u00b3 total; irrigation only (purple pipe)."
     },
     {
       "group": "Source",
@@ -269,7 +269,7 @@
     {
       "group": "Treat",
       "title": "Filters F-1 To F-5 + UV-1",
-      "note": "Sediment, iron/Mn, softener, carbon, 5 µm, UV."
+      "note": "Sediment, iron/Mn, softener, carbon, 5 \u00b5m, UV."
     },
     {
       "group": "Treat",
@@ -294,11 +294,11 @@
     {
       "group": "Rain",
       "title": "Gutters, Leaf Screens, First-Flush",
-      "note": "Metal roof ≈815 m²; overflow to swale + soakaway."
+      "note": "Metal roof \u2248815 m\u00b2; overflow to swale + soakaway."
     },
     {
       "group": "Rain",
-      "title": "Irrigation Zones Z1–Z6",
+      "title": "Irrigation Zones Z1\u2013Z6",
       "note": "IP-1 pump, disc filter; garden, maples, beds, orchard, courtyard, coop."
     }
   ],
@@ -643,7 +643,7 @@
       "needsResize": false
     }
   ],
-  "deckNote": "Max's decks: rooms, structure, systems, style, and shared material decks. New decks from Open a New Deck are exactly 20 cards.",
+  "deckNote": "Max's library: rooms, structure, systems, style, and shared material swipe decks. Ready 20-card Style Swipe decks sit on the shelf above.",
   "nozomiDeckGroups": [
     {
       "id": "finishes",
@@ -681,7 +681,7 @@
       "id": "led",
       "title": "LED + Controls",
       "note": "Circuits and dimming.",
-      "detail": "LED throughout with simple scene dimming in living, kitchen, and master — no proprietary lock-in."
+      "detail": "LED throughout with simple scene dimming in living, kitchen, and master \u2014 no proprietary lock-in."
     },
     {
       "id": "ev",

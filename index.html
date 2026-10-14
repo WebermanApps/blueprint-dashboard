@@ -1,12 +1,12 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Blueprint Command Center</title><meta name="description" content="Blueprint dream home agent dashboard"><meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-launcher.css?v=79aff73">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=1">
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
 <style>
-:root{--ink:#0a0a0a;--pri:#171717;--mute:#737373;--line:#e5e5e5;--bg:#fafafa;--card:#fff;--soft:#f5f5f5;--cream:#FBF8F2;--sel:#F3EDE2;--sage:#6b8f71;--amber:#b7791f;--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms;color-scheme:light}
+:root{--ink:#0a0a0a;--pri:#171717;--mute:#737373;--line:#e5e5e5;--bg:#FDFBF6;--card:#fff;--soft:#f5f5f5;--cream:#FBF8F2;--sel:#F3EDE2;--sage:#6b8f71;--amber:#b7791f;--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms;color-scheme:light}
 *{box-sizing:border-box}html,body{margin:0}
-body{font:16px/1.45 Hind,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+body{font:16px/1.45 Hind,system-ui,Arial,sans-serif;color:var(--ink);background:#FDFBF6;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
 h1,h2,h3,.tile b,.t,.at{font-family:Khand,Arial,sans-serif;font-weight:700}
 .wrap{max-width:760px;margin:0 auto;padding:0 14px}
 a{color:var(--ink)}
@@ -107,6 +107,8 @@ video{width:100%;display:block;background:#000;border:1px solid var(--line);marg
 footer{text-align:center;padding:8px 14px 20px}.mw-built{font-size:13px;color:var(--mute)}.mw-built a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid rgba(10,10,10,.3)}
 
 /* Kit overrides: ≥13px */
+.ds-sec h2,.ds-sec .ds-name{font-size:18px!important}
+.ds-sec .ds-meta,.ds-sec .ds-blurb,.ds-sec .ds-pill,.ds-sec .ds-go{font-size:13px!important}
 .dl-sec h2,.dl-sec h3{font-size:18px!important}
 .dl-sec .dl-meta,.dl-sec .dl-pill,.dl-sec .dl-state,.dl-sec .dl-cat span{font-size:13px!important}
 .dl-sec .dl-cat b,.dl-sec .dl-rname,.dl-sec .dl-btn{font-size:14px!important}
@@ -173,9 +175,10 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 .who-sec .dl-host{max-width:760px;margin:0 auto;padding:0 14px}
 @media(min-width:1024px){.who-sec .dl-host{max-width:1180px;padding:0 28px}}
 @media(min-width:1600px){.who-sec .dl-host{max-width:min(2200px,90vw)}}
+.ds-host,.dl-host{max-width:760px;margin:8px auto 0;padding:0 14px}
 #deckLaunch{max-width:760px;margin:8px auto 0;padding:0 14px}
-@media(min-width:1024px){#deckLaunch{max-width:1180px;padding:0 28px}}
-@media(min-width:1600px){#deckLaunch{max-width:min(2200px,90vw)}}
+@media(min-width:1024px){.ds-host,.dl-host,#deckLaunch{max-width:1180px;padding:0 28px}}
+@media(min-width:1600px){.ds-host,.dl-host,#deckLaunch{max-width:min(2200px,90vw)}}
 
 /* Energy Choices — Bottom Sheet Compact (blueprint-bank-068 B) */
 .energy-block{margin:0 0 14px}
@@ -216,19 +219,19 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
   <a class="sbtn mw-hover" id="h3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener">3D Model</a>
 </div></header>
 
+<section class="ds-host" id="maxShelf" data-shelf="shelf.json" aria-label="Max ready decks"></section>
+
 <div class="wrap titleblk" id="home">
   <div class="brand" id="role">Blueprint · Dream Home Agent</div>
   <h1 id="proj">Weberman Residence</h1>
   <p class="lede" id="stat"></p>
 </div>
 
-
 <section class="who-sec max" id="maxDecks" aria-labelledby="maxDecksH">
   <div class="wrap">
     <div class="who-h"><h2 id="maxDecksH">Max's Decks</h2><span class="who-tag">Decision-maker</span></div>
-    <p class="who-blurb">Rooms, layout, structure, systems, style, and shared material decks.</p>
+    <p class="who-blurb">Rooms, layout, structure, systems, style, and shared material decks. Ready 20-card decks sit at the top — no request picker.</p>
   </div>
-  <div class="dl-host" id="deckLaunchMax" data-launcher="launcher-max.json" data-voter="max"></div>
   <div class="deck-lib" id="deckLibMax"><div class="wrap">
     <div class="lab">Deck Library</div>
     <p class="note" id="deckNoteMax"></p>
@@ -241,7 +244,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
     <div class="who-h"><h2 id="nozomiDecksH">Nozomi's Decks</h2><span class="who-tag">Finishes</span></div>
     <p class="who-blurb">Finish details only — plaster, tile, wood and stone, cabinetry, hardware, fixtures, lighting, fabrics. Not layout, structure, or systems.</p>
   </div>
-  <div class="dl-host" id="deckLaunchNozomi" data-launcher="launcher-nozomi.json" data-voter="nozomi"></div>
+  <div class="ds-host" id="nozomiShelf" data-shelf="shelf-nozomi.json" data-voter="nozomi" aria-label="Nozomi ready decks"></div>
   <div class="deck-lib" id="deckLibNozomi"><div class="wrap">
     <div class="lab">Deck Library</div>
     <p class="note" id="deckNoteNozomi"></p>
@@ -443,38 +446,6 @@ document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u
 const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.forEach(a=>a.addEventListener('click',()=>{topNav.forEach(x=>x.classList.remove('on'));a.classList.add('on')}));
 </script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-launcher.js?v=79aff73" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=1" defer></script>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
-<script>
-/* Tag Nozomi launcher deck-requests with voter:nozomi (kit 79aff73 has no voter field). */
-(function(){
-  function wrap(){
-    if(!window.MWSubmit || MWSubmit._voterWrap) return;
-    var orig = MWSubmit.send.bind(MWSubmit);
-    MWSubmit.send = function(o){
-      o = o || {};
-      try{
-        var v = null;
-        if(o.app==='deck-launcher'){
-          var nbox = document.getElementById('deckLaunchNozomi');
-          var mbox = document.getElementById('deckLaunchMax');
-          /* Prefer explicit voter on active launcher host via last click target */
-          if(MWSubmit._lastVoter) v = MWSubmit._lastVoter;
-          else if(nbox && (!mbox || (nbox.querySelector('.dl-btn') && document.activeElement && nbox.contains(document.activeElement)))) v = 'nozomi';
-        }
-        if(v){ o.voter = v; if(o.results && typeof o.results==='object') o.results.voter = v; }
-      }catch(e){}
-      return orig(o);
-    };
-    MWSubmit._voterWrap = 1;
-    document.addEventListener('click', function(e){
-      var h = e.target && e.target.closest && e.target.closest('[data-voter]');
-      if(h) MWSubmit._lastVoter = h.getAttribute('data-voter');
-    }, true);
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(wrap, 0); });
-  else setTimeout(wrap, 0);
-  window.addEventListener('load', wrap);
-})();
-</script>
 </body></html>

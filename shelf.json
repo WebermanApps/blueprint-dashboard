@@ -1,0 +1,38 @@
+{
+ "agent": "blueprint",
+ "decks": [
+  {
+   "id": "blueprint-ready-1",
+   "name": "Materials & Finishes",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-1-r4ilrx/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Wood, stone, tile, cabinets, hardware \u2014 20 cards"
+  },
+  {
+   "id": "blueprint-ready-2",
+   "name": "Exterior & Landscape",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-2-qy2m5g/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Entry, courtyard, pool, garden \u2014 20 cards"
+  },
+  {
+   "id": "blueprint-ready-3",
+   "name": "Systems",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-3-g66des/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Water, power, climate, structure \u2014 20 cards"
+  },
+  {
+   "id": "blueprint-ready-4",
+   "name": "Style",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-4-0dv3xw/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Overall look, tie-breakers, This or That \u2014 20 cards"
+  }
+ ],
+ "updated": "2026-10-14T19:35:02+07:00"
+}
