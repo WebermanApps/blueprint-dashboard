@@ -1,35 +1,28 @@
 {
-  "updated": "2026-10-14 18:06 ICT",
+  "updated": "2026-10-14 20:10 ICT",
   "routines": [
     {
       "name": "Blueprint Morning Report",
       "group": "Reports",
       "schedule_plain": "Daily At 4:47 AM ICT",
       "status": "on",
-      "last_run": "Today 4:57 AM"
+      "last_run": "2026-10-14 04:55 ICT"
     },
     {
       "name": "Blueprint Evening Report",
-      "group": "Reports",
-      "schedule_plain": "Daily At 6:03 PM ICT",
-      "status": "on",
-      "last_run": "Today 6:06 PM"
-    },
-    {
-      "name": "Deck Request Watch",
-      "group": "Event/Listener",
-      "schedule_plain": "Every 10 Minutes",
-      "status": "on",
-      "last_run": "Today 2:50 PM",
-      "note": "Pull ops/submit/inbox/blueprint for type deck-request; build 20-card deck; set launcher ready."
+      "group": "Paused",
+      "schedule_plain": "Retired 20:05 Oct 14",
+      "status": "paused",
+      "last_run": "2026-10-14 18:06 ICT",
+      "note": "Evening Report retired (Max 20:05). Morning Report only (due 5:00 ICT)."
     },
     {
       "name": "Deck Refill After Submit",
       "group": "Event/Listener",
       "schedule_plain": "On Each Real Submit",
       "status": "on",
-      "last_run": "Today 2:50 PM",
-      "note": "After a Blueprint Style Swipe submit: drop answered (R61), reword skips (R64), build fresh 20 in same categories, set launcher ready."
+      "last_run": "Not Yet",
+      "note": "After a real Blueprint Style Swipe submit: ready_shelf.py refill <deck_id> --shelf /workspace/blueprint-dashboard/shelf.json --agent blueprint"
     }
   ]
 }

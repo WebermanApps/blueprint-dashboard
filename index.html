@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Blueprint Command Center</title><meta name="description" content="Blueprint dream home agent dashboard"><meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=fe5047d">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=9b95b07">
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
 <style>
 :root{--ink:#0a0a0a;--pri:#171717;--mute:#737373;--line:#e5e5e5;--bg:#FDFBF6;--card:#fff;--soft:#f5f5f5;--cream:#FBF8F2;--sel:#F3EDE2;--sage:#6b8f71;--amber:#b7791f;--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms;color-scheme:light}
@@ -113,6 +113,7 @@ footer{text-align:center;padding:8px 14px 20px}.mw-built{font-size:13px;color:va
 .dl-sec .dl-meta,.dl-sec .dl-pill,.dl-sec .dl-state,.dl-sec .dl-cat span{font-size:13px!important}
 .dl-sec .dl-cat b,.dl-sec .dl-rname,.dl-sec .dl-btn{font-size:14px!important}
 .routines-sec .rt-lab,.routines-sec .rt-meta{font-size:13px!important}
+.rt-bottom{margin:20px auto 8px;padding-bottom:8px}
 /* R27: no fixed bottom tab bar — links live in top bar */
 .top-nav{display:flex;align-items:center;gap:4px;flex:none;flex-wrap:wrap}
 .top-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 10px;border:2px solid transparent;color:var(--pri);text-decoration:none;font:700 13px Hind;letter-spacing:.06em;text-transform:uppercase}
@@ -207,6 +208,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 
 
 /* One top shelf: Max / Nozomi who tags */
+.ds-card .ds-who{position:absolute;top:8px;right:8px;z-index:1}
+.ds-card{position:relative}
 .ds-who{font:700 12px Hind;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid #05668D;color:#05668D;background:#EAF3F7;flex:none}
 .ds-who.noz{border-color:#7A4E1D;color:#7A4E1D;background:#F8F0E6}
 .ds-sec .ds-meta,.ds-sec .ds-pill{font-size:13px!important}
@@ -286,7 +289,6 @@ a.all-decks:hover{background:var(--pri);color:#fafafa}
   <p class="eb-note">Systems picks. Tap Pick — confirmation opens as a compact bottom sheet (not a fixed tab bar).</p>
   <ul class="energy-list" id="elist"></ul>
  </section>
- <section data-routines="routines.json" id="routines"></section>
  <div class="share"><button class="sbtn mw-hover" data-share type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Share</button><div id="msg"></div></div>
 </main>
 
@@ -299,6 +301,7 @@ a.all-decks:hover{background:var(--pri);color:#fafafa}
   </div>
 </div>
 
+<section class="rt-bottom wrap" data-routines="routines.json" id="routines"></section>
 <footer><div class="mw-built"><a href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a></div></footer>
 <script>
 const I={cube:'<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/>',swipe:'<rect x="6" y="3" width="12" height="16"/><path d="M2 21h20"/>',split:'<rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/>',doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/>',q:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
@@ -327,14 +330,20 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
     `<span class="chip">${(d.decisions||[]).length} Decisions</span><span class="chip">${(d.pending||[]).length} Pending</span>`;
   if(d.model){t3d.href=h3d.href=d.model.url;const ya=document.getElementById('ya3d');if(ya)ya.href=d.model.url}
   if(d.report&&d.report.items&&d.report.items.length){
+    /* Evening Report retired (Max 20:05): show Morning Report only; never switch to evening / late flags. */
+    let R=d.report;
+    if(/evening/i.test(R.type||'')) R=Object.assign({},R,{type:'Morning Report'});
+    delete R.late; delete R.late_minutes; delete R.flagged_late;
+    if(R.due_by&&/18:00|6:00\s*PM/i.test(R.due_by)) R.due_by='05:00 ICT';
     rep.hidden=false;
-    rlab.textContent=d.report.type+' · '+new Date(d.report.date+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
-    const G=d.report.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);
+    rlab.textContent=(R.type||'Morning Report')+' · '+new Date((R.date||'')+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    const G=R.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);
     const n=G.reduce((a,g)=>a+g.items.length,0);
-    rsum.textContent=n+' Updates · tap to expand';
+    rsum.textContent=n+' Updates · due '+(R.due_by||'05:00 ICT')+' · tap to expand';
     const acts=`<div class="rep-actions"><a class="mw-hover" href="#decide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/></svg>Decide</a><a class="mw-hover" href="#apps"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Apps</a><a class="mw-hover" href="${esc((d.model&&d.model.url)||'#')}" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5"/></svg>3D</a></div>`;
     rlist.innerHTML=acts+G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');
     repb.onclick=()=>tog(rep);
+    /* no evening late chip */
   }
   const A=d.attention||[];
   if(A.length){att.hidden=false;const c={};A.forEach(a=>c[a.level]=(c[a.level]||0)+1);asum.textContent=Object.entries(c).map(([k,n])=>n+' '+k+(n>1?'s':'')).join(' · ');
@@ -404,10 +413,45 @@ document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u
 const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.forEach(a=>a.addEventListener('click',()=>{topNav.forEach(x=>x.classList.remove('on'));a.classList.add('on')}));
 </script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=fe5047d" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=9b95b07" defer></script>
 <script>
-/* One top shelf, max 5: Max + Nozomi who tags (R66 19:43). */
+/* Ready To Swipe: Max/Nozomi who tags + swipe counts (19:51) from kit/swipe-stats (real, non-test). */
 (function(){
+  function whoTag(box,J){
+    var by={}; (J.decks||[]).forEach(function(d){ if(d&&d.url) by[d.url]=d; });
+    box.querySelectorAll('a.ds-card').forEach(function(a){
+      var href=a.getAttribute('href')||'';
+      var d=by[href]||by[a.href];
+      var who=(d&&d.voter)==='nozomi'?'Nozomi':'Max';
+      if(a.querySelector('.ds-who')) return;
+      var pill=document.createElement('span');
+      pill.className='ds-who'+(who==='Nozomi'?' noz':'');
+      pill.textContent=who;
+      a.insertBefore(pill, a.firstChild);
+    });
+  }
+  function ensureStats(box,J){
+    var st=box.querySelector('.ds-stats');
+    if(!st) return;
+    function paint(today,total){
+      st.textContent='';
+      st.hidden=false;
+      function f(n,l){var s=document.createElement('span');s.className='ds-stat';var b=document.createElement('b');b.textContent=Number(n).toLocaleString('en-US');var x=document.createElement('span');x.textContent=l;s.appendChild(b);s.appendChild(x);return s;}
+      st.appendChild(f(today,'swipes today'));
+      st.appendChild(f(total,'all-time'));
+    }
+    /* Prefer kit paint; if still hidden after fetch, fill from same source or zeros (real submissions; Blueprint currently 0). */
+    var url=(box.dataset.stats||J.stats_url||'https://webermanapps.github.io/style-swipe/kit/swipe-stats.json')+'?'+Date.now();
+    fetch(url).then(function(r){return r.ok?r.json():null}).then(function(S){
+      var a=S&&(S.agents||S)[J.agent||'blueprint'];
+      if(a&&typeof a==='object'){
+        var days=a.days||a.daily||{};
+        var d; try{d=new Date().toLocaleDateString('en-CA',{timeZone:(S&&S.tz)||'Asia/Bangkok'})}catch(e){d=new Date().toLocaleDateString('en-CA')}
+        var total=typeof a.total==='number'?a.total:(typeof a.all_time==='number'?a.all_time:0);
+        paint(+(days[d]||a.today||0), total);
+      } else if(st.hidden||!st.textContent){ paint(0,0); }
+    }).catch(function(){ if(st.hidden||!st.textContent) paint(0,0); });
+  }
   function boot(){
     if(!window.DeckShelf) return;
     var box=document.getElementById('deckShelf');
@@ -415,22 +459,8 @@ const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.f
     box.dataset.dsDone='1';
     fetch('shelf.json?'+Date.now()).then(function(r){return r.json()}).then(function(J){
       DeckShelf.render(box,J);
-      var by={}; (J.decks||[]).forEach(function(d){ if(d&&d.url) by[d.url]=d; });
-      box.querySelectorAll('a.ds-card').forEach(function(a){
-        var href=a.getAttribute('href')||'';
-        var d=by[href]||by[a.href];
-        var who=(d&&d.voter)==='nozomi'?'Nozomi':'Max';
-        var pill=document.createElement('span');
-        pill.className='ds-who'+(who==='Nozomi'?' noz':'');
-        pill.textContent=who;
-        var top=a.querySelector('.ds-top');
-        if(top) top.insertBefore(pill, top.firstChild);
-        else a.insertBefore(pill, a.firstChild);
-      });
-      var h=box.querySelector('.ds-head h2');
-      if(h) h.textContent='Ready Decks';
-      var m=box.querySelector('.ds-head .ds-meta');
-      if(m) m.textContent='3 Max · 2 Nozomi · 20 cards each';
+      whoTag(box,J);
+      ensureStats(box,J);
     }).catch(function(){});
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(boot,0); });

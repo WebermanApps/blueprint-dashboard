@@ -1,35 +1,31 @@
 {
   "agent": "blueprint",
-  "type": "Evening Report",
+  "type": "Morning Report",
   "date": "2026-10-14",
-  "posted": "2026-10-14T18:06:00+07:00",
-  "due_by": "18:00 ICT",
-  "morning": "05:00 ICT",
+  "posted": "2026-10-14T04:55:00+07:00",
+  "due_by": "05:00 ICT",
   "items": [
     {
       "cat": "Today",
       "items": [
-        "Morning Report posted 4:56 AM. Overnight inbox pull found test rows only, so there were no design picks to apply.",
-        "Dashboard picks applied: plain title header, Water Systems drawn diagram plus item list, and a Routines section.",
-        "Ready Deck Shelf: 3 Max + 2 Nozomi on top (5-deck cap); All Decks \u2192 Deck Building.",
-        "Max and Nozomi now have separate deck sections. Nozomi's Finish Details deck (20 cards, finishes only) is live in Blueprint Swipe.",
-        "Phone bottom tabs removed (Decide, Apps, Work, 3D now in the top bar). Round 2 and 3 renamed Material Picks and Hardware, Table and Lights This or That.",
-        "Energy Choices now opens a compact bottom sheet (your Style Swipe pick B)."
+        "Overnight inbox pull: test rows only \u2014 no design picks to apply.",
+        "Keep drawing set, 3D model, and wall standard current (steel stud, fiber-cement, lime plaster).",
+        "Ready To Swipe shelf: 3 Max + 2 Nozomi (5-deck cap). Evening Report retired 20:05 ICT \u2014 Morning Report only going forward."
       ]
     },
     {
       "cat": "Decide",
       "items": [
         "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-        "Hardware, Table and Lights This or That: door hardware, dining table, exterior lights. Wall texture This or That on request."
+        "Hardware, Table and Lights This or That: door hardware, dining table, exterior lights. Wall texture on request."
       ]
     },
     {
-      "cat": "Tomorrow",
+      "cat": "Pending",
       "items": [
-        "Morning Report by 5:00 AM ICT.",
-        "Any deck answers you or Nozomi submit get applied, and that deck is refilled to 20 cards in the same categories.",
-        "Still pending: engineer check of steel stud sizing, beds and bath-vanity deck images, older decks resized to 20, plus site, finish tier and climbing pavilion."
+        "Engineer check of steel stud sizing and connections.",
+        "Beds and bath-vanity swipe deck images still to generate.",
+        "Still open: site location, finish tier, climbing pavilion; older decks resize to 20."
       ]
     }
   ]
