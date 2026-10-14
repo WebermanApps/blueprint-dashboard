@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Blueprint Command Center</title><meta name="description" content="Blueprint dream home agent dashboard"><meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=1">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=fe5047d">
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
 <style>
 :root{--ink:#0a0a0a;--pri:#171717;--mute:#737373;--line:#e5e5e5;--bg:#FDFBF6;--card:#fff;--soft:#f5f5f5;--cream:#FBF8F2;--sel:#F3EDE2;--sage:#6b8f71;--amber:#b7791f;--lagoon:#05668D;--saffron:#D4A017;--jungle:#0B6E4F;--terra:#C1502E;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms;color-scheme:light}
@@ -205,6 +205,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 }
 @media(prefers-reduced-motion:reduce){.bp-sheet-bg,.bp-sheet{transition:none}}
 
+
+/* One top shelf: Max / Nozomi who tags */
+.ds-who{font:700 12px Hind;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid #05668D;color:#05668D;background:#EAF3F7;flex:none}
+.ds-who.noz{border-color:#7A4E1D;color:#7A4E1D;background:#F8F0E6}
+.ds-sec .ds-meta,.ds-sec .ds-pill{font-size:13px!important}
+.all-decks-wrap{max-width:760px;margin:0 auto 10px;padding:0 14px}
+@media(min-width:1024px){.all-decks-wrap{max-width:1180px;padding:0 28px}}
+@media(min-width:1600px){.all-decks-wrap{max-width:min(2200px,90vw)}}
+a.all-decks{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border:2px solid var(--pri);background:#fff;color:var(--pri);text-decoration:none;font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase}
+a.all-decks:hover{background:var(--pri);color:#fafafa}
+
 </style><script src="ptr.js?v=4" defer></script></head><body>
 <header class="top"><div class="wrap">
   <a class="sbtn mw-hover apphome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">Apps Home</a>
@@ -219,38 +230,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
   <a class="sbtn mw-hover" id="h3d" href="https://webermanapps.github.io/weberman-residence/" target="_blank" rel="noopener">3D Model</a>
 </div></header>
 
-<section class="ds-host" id="maxShelf" data-shelf="shelf.json" aria-label="Max ready decks"></section>
+<section class="ds-host" id="deckShelf" aria-label="Ready decks"></section>
+<div class="all-decks-wrap"><a class="all-decks mw-hover" href="https://webermanapps.github.io/branding-djqmb410/decks/">All Decks</a></div>
 
 <div class="wrap titleblk" id="home">
   <div class="brand" id="role">Blueprint · Dream Home Agent</div>
   <h1 id="proj">Weberman Residence</h1>
   <p class="lede" id="stat"></p>
 </div>
-
-<section class="who-sec max" id="maxDecks" aria-labelledby="maxDecksH">
-  <div class="wrap">
-    <div class="who-h"><h2 id="maxDecksH">Max's Decks</h2><span class="who-tag">Decision-maker</span></div>
-    <p class="who-blurb">Rooms, layout, structure, systems, style, and shared material decks. Ready 20-card decks sit at the top — no request picker.</p>
-  </div>
-  <div class="deck-lib" id="deckLibMax"><div class="wrap">
-    <div class="lab">Deck Library</div>
-    <p class="note" id="deckNoteMax"></p>
-    <div id="deckGroupsMax"></div>
-  </div></div>
-</section>
-
-<section class="who-sec nozomi" id="nozomiDecks" aria-labelledby="nozomiDecksH">
-  <div class="wrap">
-    <div class="who-h"><h2 id="nozomiDecksH">Nozomi's Decks</h2><span class="who-tag">Finishes</span></div>
-    <p class="who-blurb">Finish details only — plaster, tile, wood and stone, cabinetry, hardware, fixtures, lighting, fabrics. Not layout, structure, or systems.</p>
-  </div>
-  <div class="ds-host" id="nozomiShelf" data-shelf="shelf-nozomi.json" data-voter="nozomi" aria-label="Nozomi ready decks"></div>
-  <div class="deck-lib" id="deckLibNozomi"><div class="wrap">
-    <div class="lab">Deck Library</div>
-    <p class="note" id="deckNoteNozomi"></p>
-    <div id="deckGroupsNozomi"></div>
-  </div></div>
-</section>
 
 <div class="your-apps" id="yourApps"><div class="wrap">
   <div class="lab">Your Apps</div>
@@ -335,35 +322,6 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
   const u='Updated '+(d.updated||'');
   updTop.textContent=u;
 
-  const ICN={room:'<path d="M3 11l9-7 9 7v9H3z"/><path d="M10 20v-6h4v6"/>',mat:'<rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/>',style:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
-  const isvg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICN[k]||ICN.room}</svg>`;
-  function paintLib(host, noteEl, groups, all, note, openId){
-    if(noteEl && note) noteEl.textContent=note;
-    if(!host) return;
-    host.innerHTML=(groups||[]).map(g=>{
-      const items=all.filter(x=>x.group===g.id);
-      const done=items.filter(x=>x.done).length;
-      const openN=items.filter(x=>!x.done).length;
-      const sum=items.length+' deck'+(items.length===1?'':'s')+' · '+done+' done'+(openN?' · '+openN+' open':'');
-      const rows=items.map(x=>{
-        const tot=x.total!=null?x.total:20;
-        const ans=x.done?tot:(x.answered||0);
-        const pct=tot?Math.min(100,Math.round(100*ans/tot)):0;
-        const prog=x.pending?'Pending':(x.done?'Done':(ans+'/'+tot));
-        const cls='drow'+(x.done?' done':'')+(x.pending?' pending':'');
-        const bar='<div class="bar" aria-hidden="true"><i style="width:'+pct+'%"></i></div>';
-        const body='<span class="di">'+isvg(x.icon||g.icon)+'</span><div><span class="nm">'+esc(x.name)+'</span><span class="meta">'+esc(x.full||'')+(x.needsResize?' · resize to 20 later':'')+'</span>'+bar+'</div><span class="pct">'+esc(prog)+'</span>';
-        if(x.pending||!x.url) return '<div class="'+cls+'">'+body+'</div>';
-        return '<a class="'+cls+' mw-hover" href="'+esc(x.url)+'">'+body+'</a>';
-      }).join('');
-      const isOpen=(openId?g.id===openId:g.id==='materials') && openN>0;
-      return '<div class="dg'+(isOpen?' open':'')+'" data-g="'+esc(g.id)+'"><button type="button" aria-expanded="'+(isOpen?'true':'false')+'"><span class="ic">'+isvg(g.icon)+'</span><span class="gt">'+esc(g.name)+'</span><span class="gs">'+esc(sum)+'</span><span class="ch"></span></button><div class="ab"><div><div class="drows">'+rows+'</div></div></div></div>';
-    }).join('');
-    host.querySelectorAll('.dg').forEach(el=>{el.querySelector('button').onclick=()=>tog(el)});
-  }
-  const allDecks=d.decks||[];
-  paintLib(document.getElementById('deckGroupsMax'), document.getElementById('deckNoteMax'), d.deckGroups||[], allDecks.filter(x=>(x.owner||'max')!=='nozomi'), d.deckNote, 'materials');
-  paintLib(document.getElementById('deckGroupsNozomi'), document.getElementById('deckNoteNozomi'), d.nozomiDeckGroups||[], allDecks.filter(x=>x.owner==='nozomi'), d.nozomiDeckNote, 'finishes');
 
   facts.innerHTML=(d.facts||[]).map(f=>`<span class="chip">${esc(f)}</span>`).join('')+
     `<span class="chip">${(d.decisions||[]).length} Decisions</span><span class="chip">${(d.pending||[]).length} Pending</span>`;
@@ -446,6 +404,40 @@ document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u
 const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.forEach(a=>a.addEventListener('click',()=>{topNav.forEach(x=>x.classList.remove('on'));a.classList.add('on')}));
 </script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=1" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=fe5047d" defer></script>
+<script>
+/* One top shelf, max 5: Max + Nozomi who tags (R66 19:43). */
+(function(){
+  function boot(){
+    if(!window.DeckShelf) return;
+    var box=document.getElementById('deckShelf');
+    if(!box||box.dataset.dsDone) return;
+    box.dataset.dsDone='1';
+    fetch('shelf.json?'+Date.now()).then(function(r){return r.json()}).then(function(J){
+      DeckShelf.render(box,J);
+      var by={}; (J.decks||[]).forEach(function(d){ if(d&&d.url) by[d.url]=d; });
+      box.querySelectorAll('a.ds-card').forEach(function(a){
+        var href=a.getAttribute('href')||'';
+        var d=by[href]||by[a.href];
+        var who=(d&&d.voter)==='nozomi'?'Nozomi':'Max';
+        var pill=document.createElement('span');
+        pill.className='ds-who'+(who==='Nozomi'?' noz':'');
+        pill.textContent=who;
+        var top=a.querySelector('.ds-top');
+        if(top) top.insertBefore(pill, top.firstChild);
+        else a.insertBefore(pill, a.firstChild);
+      });
+      var h=box.querySelector('.ds-head h2');
+      if(h) h.textContent='Ready Decks';
+      var m=box.querySelector('.ds-head .ds-meta');
+      if(m) m.textContent='3 Max · 2 Nozomi · 20 cards each';
+    }).catch(function(){});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(boot,0); });
+  else setTimeout(boot,0);
+  window.addEventListener('load', boot);
+})();
+</script>
+
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
 </body></html>

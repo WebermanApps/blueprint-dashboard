@@ -1,5 +1,6 @@
 {
  "agent": "blueprint",
+ "updated": "2026-10-14T19:49:59+07:00",
  "decks": [
   {
    "id": "blueprint-ready-1",
@@ -7,7 +8,8 @@
    "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-1-r4ilrx/",
    "total": 20,
    "topic": "blueprint",
-   "blurb": "Wood, stone, tile, cabinets, hardware \u2014 20 cards"
+   "blurb": "Wood, stone, tile, cabinets, hardware \u2014 20 cards",
+   "voter": "max"
   },
   {
    "id": "blueprint-ready-2",
@@ -15,15 +17,8 @@
    "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-2-qy2m5g/",
    "total": 20,
    "topic": "blueprint",
-   "blurb": "Entry, courtyard, pool, garden \u2014 20 cards"
-  },
-  {
-   "id": "blueprint-ready-3",
-   "name": "Systems",
-   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-3-g66des/",
-   "total": 20,
-   "topic": "blueprint",
-   "blurb": "Water, power, climate, structure \u2014 20 cards"
+   "blurb": "Entry, courtyard, pool, garden \u2014 20 cards",
+   "voter": "max"
   },
   {
    "id": "blueprint-ready-4",
@@ -31,8 +26,39 @@
    "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-4-0dv3xw/",
    "total": 20,
    "topic": "blueprint",
-   "blurb": "Overall look, tie-breakers, This or That \u2014 20 cards"
+   "blurb": "Overall look, tie-breakers, This or That \u2014 20 cards",
+   "voter": "max"
+  },
+  {
+   "id": "nozomi-finishes",
+   "name": "Nozomi: Finish Details",
+   "url": "https://webermanapps.github.io/blueprint-swipe/#/nozomi-finishes",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Plaster, tile, wood, stone, cabinets, hardware, lights, fabrics",
+   "voter": "nozomi"
+  },
+  {
+   "id": "blueprint-ready-5",
+   "name": "Nozomi Finishes Ready",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-5-f3x5xp/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Finish details and materials \u2014 20 cards",
+   "voter": "nozomi"
   }
  ],
- "updated": "2026-10-14T19:35:02+07:00"
+ "held": [
+  {
+   "id": "blueprint-ready-3",
+   "name": "Systems",
+   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-3-g66des/",
+   "total": 20,
+   "topic": "blueprint",
+   "blurb": "Water, power, climate, structure \u2014 20 cards",
+   "voter": "max",
+   "note": "Built; not shown (5-deck cap). Swap onto shelf when a slot opens."
+  }
+ ],
+ "pinned": []
 }

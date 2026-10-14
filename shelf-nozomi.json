@@ -1,25 +1,7 @@
 {
  "agent": "blueprint",
- "decks": [
-  {
-   "id": "nozomi-finishes",
-   "name": "Nozomi: Finish Details",
-   "url": "https://webermanapps.github.io/blueprint-swipe/#/nozomi-finishes",
-   "total": 20,
-   "topic": "blueprint",
-   "blurb": "Plaster, tile, wood, stone, cabinets, hardware, lights, fabrics",
-   "voter": "nozomi"
-  },
-  {
-   "id": "blueprint-ready-5",
-   "name": "Nozomi Finishes Ready",
-   "url": "https://webermanapps.github.io/style-swipe/blueprint-ready-5-f3x5xp/",
-   "total": 20,
-   "topic": "blueprint",
-   "blurb": "Finish details and materials \u2014 20 cards",
-   "voter": "nozomi"
-  }
- ],
- "updated": "2026-10-14T19:35:03+07:00",
- "voter": "nozomi"
+ "voter": "nozomi",
+ "updated": "2026-10-14T19:49:59+07:00",
+ "note": "Nozomi decks live in shelf.json (5-deck cap). Refill against shelf.json.",
+ "decks": []
 }

@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2026 \u00b7 19:40 ICT",
+  "updated": "Oct 14, 2026 \u00b7 19:50 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -9,7 +9,7 @@
     "3 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Ready Deck Shelf (R66): Materials, Exterior, Systems, Style for Max; Nozomi finishes shelf. Request picker retired.",
+  "status": "Ready Decks: 3 Max + 2 Nozomi (5-deck cap). All Decks link to Deck Building. Libraries removed from dashboard.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -81,7 +81,7 @@
       "date": "Oct 14"
     },
     {
-      "title": "Neater Deck Library + Ready Shelf",
+      "title": "Ready Deck Shelf (5-deck cap)",
       "note": "Grouped collapsible decks, R63 pin max 3, R66 launcher with 5 Blueprint categories.",
       "date": "Oct 14"
     },
