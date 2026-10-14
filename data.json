@@ -1,7 +1,7 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 14, 2026 \u00b7 15:30 ICT",
+  "updated": "Oct 14, 2026 \u00b7 17:30 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
@@ -30,10 +30,6 @@
     {
       "title": "Hardware, Table and Lights This or That",
       "note": "Door hardware, dining table, exterior lights."
-    },
-    {
-      "title": "Phone Bottom Tabs",
-      "note": "Keep or remove on this dashboard (no-fixed-bar rule)."
     }
   ],
   "pending": [
@@ -648,5 +644,43 @@
       "icon": "mat"
     }
   ],
-  "nozomiDeckNote": "Nozomi picks finishes only (~80%+ materials and fixtures). No layout, structure, or systems. New decks are 20 cards."
+  "nozomiDeckNote": "Nozomi picks finishes only (~80%+ materials and fixtures). No layout, structure, or systems. New decks are 20 cards.",
+  "energyItems": [
+    {
+      "id": "solar",
+      "title": "Solar Ready",
+      "note": "Roof prep and conduit for PV.",
+      "detail": "Leave conduit, racking pads, and inverter space so panels can go on without tearing into the roof later."
+    },
+    {
+      "id": "foam",
+      "title": "Spray Foam",
+      "note": "Attic and rim joists.",
+      "detail": "Closed-cell spray foam at the attic and rim for a tight envelope and quieter rooms."
+    },
+    {
+      "id": "glazing",
+      "title": "Triple Pane",
+      "note": "North and street sides.",
+      "detail": "Triple-pane where sun and street noise hit hardest; keep double-pane on sheltered elevations if budget needs it."
+    },
+    {
+      "id": "hp",
+      "title": "Heat Pump",
+      "note": "All-electric HVAC + DHW.",
+      "detail": "All-electric heat pump for heating/cooling plus the 300 L heat-pump water heater already on the water diagram."
+    },
+    {
+      "id": "led",
+      "title": "LED + Controls",
+      "note": "Circuits and dimming.",
+      "detail": "LED throughout with simple scene dimming in living, kitchen, and master \u2014 no proprietary lock-in."
+    },
+    {
+      "id": "ev",
+      "title": "EV Ready",
+      "note": "Garage feeder.",
+      "detail": "Pull a 40A EV feeder to the garage now so a charger is a breaker away later."
+    }
+  ]
 }

@@ -176,6 +176,32 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
 #deckLaunch{max-width:760px;margin:8px auto 0;padding:0 14px}
 @media(min-width:1024px){#deckLaunch{max-width:1180px;padding:0 28px}}
 @media(min-width:1600px){#deckLaunch{max-width:min(2200px,90vw)}}
+
+/* Energy Choices — Bottom Sheet Compact (blueprint-bank-068 B) */
+.energy-block{margin:0 0 14px}
+.energy-block .eb-note{font-size:13px;color:#525252;margin:0 0 8px}
+.energy-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);background:#fff}
+.energy-list li{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:10px 12px;border-top:1px solid var(--line);min-height:52px}
+.energy-list li:first-child{border-top:0}
+.energy-list b{font:700 16px/1.15 Khand,Hind,sans-serif;display:block}
+.energy-list span{font-size:13px;color:#525252;display:block;margin-top:2px}
+.energy-list .pick{min-height:44px;min-width:64px;padding:0 14px;border:2px solid var(--lagoon);background:#fff;color:var(--lagoon);font:700 13px Hind;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:0}
+.energy-list .pick:hover,.energy-list .pick.on{background:var(--lagoon);color:#fff}
+.energy-list .pick.on{border-color:var(--jungle);background:var(--jungle)}
+.bp-sheet-bg{position:fixed;inset:0;z-index:40;background:rgba(10,10,10,.4);display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s var(--ease)}
+.bp-sheet-bg.on{opacity:1;pointer-events:auto}
+.bp-sheet{width:100%;max-width:480px;background:#fff;border-radius:14px 14px 0 0;box-shadow:0 -4px 14px rgba(0,0,0,.1);padding:8px 16px calc(14px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .22s var(--ease);max-height:min(42vh,280px);display:flex;flex-direction:column}
+.bp-sheet-bg.on .bp-sheet{transform:translateY(0)}
+.bp-sheet .grab{width:36px;height:4px;border-radius:2px;background:#D6D0C6;margin:4px auto 10px;flex:none}
+.bp-sheet h3{margin:0 0 4px;font:700 1.15rem/1.15 Khand,Hind,sans-serif;letter-spacing:.03em}
+.bp-sheet p{margin:0 0 12px;font-size:13px;color:#525252;line-height:1.35;flex:1;overflow:auto}
+.bp-sheet .got{display:block;width:100%;min-height:48px;border:2px solid #0A0A0A;background:#0A0A0A;color:#fff;font:700 14px Hind;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:0;flex:none}
+.bp-sheet .got:hover{background:#fff;color:#0A0A0A}
+@media(min-width:900px){
+  .bp-sheet{max-width:480px;margin:0 auto}
+}
+@media(prefers-reduced-motion:reduce){.bp-sheet-bg,.bp-sheet{transition:none}}
+
 </style><script src="ptr.js?v=4" defer></script></head><body>
 <header class="top"><div class="wrap">
   <a class="sbtn mw-hover apphome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">Apps Home</a>
@@ -265,9 +291,24 @@ a:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3p
    </div>
   </div>
  </section>
+ <section class="energy-block" id="energy" aria-labelledby="et">
+  <h3 class="grp" id="et">Energy Choices</h3>
+  <p class="eb-note">Systems picks. Tap Pick — confirmation opens as a compact bottom sheet (not a fixed tab bar).</p>
+  <ul class="energy-list" id="elist"></ul>
+ </section>
  <section data-routines="routines.json" id="routines"></section>
  <div class="share"><button class="sbtn mw-hover" data-share type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Share</button><div id="msg"></div></div>
 </main>
+
+<div class="bp-sheet-bg" id="energySheet" hidden>
+  <div class="bp-sheet" role="dialog" aria-modal="true" aria-labelledby="esTitle">
+    <div class="grab" aria-hidden="true"></div>
+    <h3 id="esTitle">Energy</h3>
+    <p id="esBody"></p>
+    <button type="button" class="got" id="esGot">Got It</button>
+  </div>
+</div>
+
 <footer><div class="mw-built"><a href="https://maxweberman.com" target="_blank" rel="noopener">Built by Max Weberman</a></div></footer>
 <script>
 const I={cube:'<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/>',swipe:'<rect x="6" y="3" width="12" height="16"/><path d="M2 21h20"/>',split:'<rect x="3" y="5" width="8" height="14"/><rect x="13" y="5" width="8" height="14"/>',doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h8"/>',q:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'};
@@ -356,6 +397,47 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
   if(wEl) wEl.innerHTML=WL.map(x=>`<li><span class="tag">${esc(x.group||'')}</span><div><b>${esc(x.title)}</b><span>${esc(x.note||'')}</span></div></li>`).join('');
 
   if(d.video){vt.textContent=d.video.title;vid.src=d.video.src;if(d.video.poster)vid.poster=d.video.poster}
+
+  /* Energy Choices — compact bottom sheet (068 B) */
+  const EI=d.energyItems||[];
+  const eEl=document.getElementById('elist');
+  const sheetBg=document.getElementById('energySheet');
+  const esTitle=document.getElementById('esTitle');
+  const esBody=document.getElementById('esBody');
+  const esGot=document.getElementById('esGot');
+  const picked=(()=>{try{return JSON.parse(localStorage.getItem('bp.energyPicks')||'{}')}catch(_){return {}}})();
+  function savePicks(){try{localStorage.setItem('bp.energyPicks',JSON.stringify(picked))}catch(_){}}
+  function closeSheet(){if(!sheetBg)return;sheetBg.classList.remove('on');sheetBg.hidden=true;document.body.style.overflow='';}
+  function openSheet(item){
+    if(!sheetBg)return;
+    esTitle.textContent=item.title||'Energy';
+    esBody.textContent=item.detail||item.note||'';
+    sheetBg.hidden=false;
+    requestAnimationFrame(()=>sheetBg.classList.add('on'));
+    document.body.style.overflow='hidden';
+    sheetBg.dataset.id=item.id||'';
+  }
+  if(eEl){
+    eEl.innerHTML=EI.map(x=>{
+      const on=picked[x.id]?' on':'';
+      return '<li><div><b>'+esc(x.title)+'</b><span>'+esc(x.note||'')+'</span></div><button type="button" class="pick'+on+'" data-id="'+esc(x.id)+'">Pick</button></li>';
+    }).join('');
+    eEl.querySelectorAll('.pick').forEach(btn=>{
+      btn.onclick=()=>{
+        const item=EI.find(z=>z.id===btn.dataset.id);
+        if(item) openSheet(item);
+      };
+    });
+  }
+  if(esGot) esGot.onclick=()=>{
+    const id=sheetBg&&sheetBg.dataset.id;
+    if(id){picked[id]=true;savePicks();const b=eEl&&eEl.querySelector('.pick[data-id="'+id+'"]');if(b)b.classList.add('on');}
+    closeSheet();
+  };
+  if(sheetBg){
+    sheetBg.addEventListener('click',e=>{if(e.target===sheetBg)closeSheet()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&sheetBg.classList.contains('on'))closeSheet()});
+  }
 });
 document.querySelectorAll('[data-share]').forEach(b=>b.onclick=async()=>{const u=location.href.split('#')[0];try{if(navigator.share)await navigator.share({title:document.title,url:u});else{await navigator.clipboard.writeText(u);msg.textContent='Link Copied'}}catch(e){}});
 const topNav=[...document.querySelectorAll('nav.top-nav a[href^="#"]')];topNav.forEach(a=>a.addEventListener('click',()=>{topNav.forEach(x=>x.classList.remove('on'));a.classList.add('on')}));
