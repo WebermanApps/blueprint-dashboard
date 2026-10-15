@@ -331,15 +331,15 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
   if(d.model){t3d.href=h3d.href=d.model.url;const ya=document.getElementById('ya3d');if(ya)ya.href=d.model.url}
   if(d.report&&d.report.items&&d.report.items.length){
     /* Evening Report retired (Max 20:05): show Morning Report only; never switch to evening / late flags. */
-    let R=d.report;
-    if(/evening/i.test(R.type||'')) R=Object.assign({},R,{type:'Morning Report'});
-    delete R.late; delete R.late_minutes; delete R.flagged_late;
+    let R=Object.assign({},d.report);
+    if(/evening/i.test(R.type||'')){ R.type='Morning Report'; delete R.late; delete R.late_minutes; delete R.flagged_late; }
     if(R.due_by&&/18:00|6:00\s*PM/i.test(R.due_by)) R.due_by='05:00 ICT';
     rep.hidden=false;
     rlab.textContent=(R.type||'Morning Report')+' · '+new Date((R.date||'')+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
     const G=R.items.map(g=>typeof g=='string'?{cat:'',items:[g]}:g);
     const n=G.reduce((a,g)=>a+g.items.length,0);
-    rsum.textContent=n+' Updates · due '+(R.due_by||'05:00 ICT')+' · tap to expand';
+    const lateBit=(R.late||R.flagged_late)?(' · late'+(R.late_minutes?(' '+R.late_minutes+' min'):'')):'';
+    rsum.textContent=n+' Updates · due '+(R.due_by||'05:00 ICT')+lateBit+' · tap to expand';
     const acts=`<div class="rep-actions"><a class="mw-hover" href="#decide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16v.5"/></svg>Decide</a><a class="mw-hover" href="#apps"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Apps</a><a class="mw-hover" href="${esc((d.model&&d.model.url)||'#')}" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5"/></svg>3D</a></div>`;
     rlist.innerHTML=acts+G.map(g=>(g.cat?`<li class="rc">${esc(g.cat)}</li>`:'')+g.items.map(i=>`<li>${esc(i)}</li>`).join('')).join('');
     repb.onclick=()=>tog(rep);

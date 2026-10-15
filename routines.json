@@ -1,12 +1,13 @@
 {
-  "updated": "2026-10-14 20:10 ICT",
+  "updated": "2026-10-15 07:25 ICT",
   "routines": [
     {
       "name": "Blueprint Morning Report",
       "group": "Reports",
       "schedule_plain": "Daily At 4:47 AM ICT",
       "status": "on",
-      "last_run": "2026-10-14 04:55 ICT"
+      "last_run": "2026-10-15 07:25 ICT",
+      "note": "Late \u2014 overnight usage outage missed 4:47/5:00 automation."
     },
     {
       "name": "Blueprint Evening Report",

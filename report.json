@@ -1,23 +1,29 @@
 {
   "agent": "blueprint",
   "type": "Morning Report",
-  "date": "2026-10-14",
-  "posted": "2026-10-14T04:55:00+07:00",
+  "date": "2026-10-15",
+  "posted": "2026-10-15T07:25:37+07:00",
   "due_by": "05:00 ICT",
+  "late": true,
+  "late_minutes": 145,
+  "note": "Posted late \u2014 overnight usage outage; Morning Report automation missed 4:49/5:00 ICT.",
   "items": [
     {
       "cat": "Today",
       "items": [
-        "Overnight inbox pull: test rows only \u2014 no design picks to apply.",
-        "Keep drawing set, 3D model, and wall standard current (steel stud, fiber-cement, lime plaster).",
-        "Ready To Swipe shelf: 3 Max + 2 Nozomi (5-deck cap). Evening Report retired 20:05 ICT \u2014 Morning Report only going forward."
+        "Catch-up Morning Report after overnight usage outage (automation missed 5:00 ICT).",
+        "Inbox pull: still no real Blueprint deck submissions (tests only) \u2014 nothing to apply or refill.",
+        "Ready To Swipe shelf holds 5 decks (3 Max + 2 Nozomi); Evening Report stays retired; deck counts only."
       ]
     },
     {
       "cat": "Decide",
       "items": [
-        "Three kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-        "Hardware, Table and Lights This or That: door hardware, dining table, exterior lights. Wall texture on request."
+        "Kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
+        "Round 3 / Hardware, Table and Lights This or That: door hardware, dining table, exterior lights.",
+        "Wall texture This or That round \u2014 run or hold?",
+        "Which deck rule wins: 5-deck cap on the dashboard shelf vs full library on Deck Building?",
+        "Still open: site location, finish tier, climbing pavilion."
       ]
     },
     {
@@ -25,7 +31,7 @@
       "items": [
         "Engineer check of steel stud sizing and connections.",
         "Beds and bath-vanity swipe deck images still to generate.",
-        "Still open: site location, finish tier, climbing pavilion; older decks resize to 20."
+        "Older room/material decks resize to 20 when we next touch them."
       ]
     }
   ]
