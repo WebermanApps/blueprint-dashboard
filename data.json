@@ -1,15 +1,15 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 15, 2026 \u00b7 07:25 ICT",
+  "updated": "Oct 20, 2026 · 20:40 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
-    "~5,200 sf",
-    "3 Bed / 3.5 Bath",
+    "~6,334 sf",
+    "4 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Morning Report Oct 15 (late after usage outage). Ready To Swipe 5-deck shelf; no new real submits overnight.",
+  "status": "Layout updated from 5 decks (Oct 20): 5,272 → 6,334 SF conditioned (cap 6,400). Courtyard shape held pending a clarification deck.",
   "decisions": [
     {
       "title": "Kitchen: Herb Nook To Corner",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Deck Rule: 5-Cap Vs Full Library",
-      "note": "Dashboard shelf stays at 5 (Max+Nozomi) while Deck Building holds the full library \u2014 confirm that split, or change it."
+      "note": "Dashboard shelf stays at 5 (Max+Nozomi) while Deck Building holds the full library — confirm that split, or change it."
     },
     {
       "title": "Site, Finish Tier, Climbing Pavilion",
@@ -53,11 +53,16 @@
     },
     {
       "title": "Resize Older Decks",
-      "note": "Room/material decks that aren't 20 cards \u2014 later resize.",
+      "note": "Room/material decks that aren't 20 cards — later resize.",
       "date": "Open"
     }
   ],
   "recent": [
+    {
+      "title": "Layout Updated From 5 Decks",
+      "note": "Layout updated from 5 decks (Oct 20): 6,334 SF (was 5,272; cap 6,400). Guest suite, teen kids' wing with lofts, bigger wellness + studio, flat-floor living.",
+      "date": "Oct 20"
+    },
     {
       "title": "Morning Report Oct 15",
       "note": "Late post after usage outage; no real overnight deck answers.",
@@ -170,13 +175,13 @@
     "due_by": "05:00 ICT",
     "late": true,
     "late_minutes": 145,
-    "note": "Posted late \u2014 overnight usage outage; Morning Report automation missed 4:49/5:00 ICT.",
+    "note": "Posted late — overnight usage outage; Morning Report automation missed 4:49/5:00 ICT.",
     "items": [
       {
         "cat": "Today",
         "items": [
           "Catch-up Morning Report after overnight usage outage (automation missed 5:00 ICT).",
-          "Inbox pull: still no real Blueprint deck submissions (tests only) \u2014 nothing to apply or refill.",
+          "Inbox pull: still no real Blueprint deck submissions (tests only) — nothing to apply or refill.",
           "Ready To Swipe shelf holds 5 decks (3 Max + 2 Nozomi); Evening Report stays retired; deck counts only."
         ]
       },
@@ -185,7 +190,7 @@
         "items": [
           "Kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
           "Round 3 / Hardware, Table and Lights This or That: door hardware, dining table, exterior lights.",
-          "Wall texture This or That round \u2014 run or hold?",
+          "Wall texture This or That round — run or hold?",
           "Which deck rule wins: 5-deck cap on the dashboard shelf vs full library on Deck Building?",
           "Still open: site location, finish tier, climbing pavilion."
         ]
@@ -242,7 +247,7 @@
     {
       "group": "Source",
       "title": "Rainwater Cisterns T-1 / T-2 / T-3",
-      "note": "80 m\u00b3 total; irrigation only (purple pipe)."
+      "note": "80 m³ total; irrigation only (purple pipe)."
     },
     {
       "group": "Source",
@@ -262,7 +267,7 @@
     {
       "group": "Treat",
       "title": "Filters F-1 To F-5 + UV-1",
-      "note": "Sediment, iron/Mn, softener, carbon, 5 \u00b5m, UV."
+      "note": "Sediment, iron/Mn, softener, carbon, 5 µm, UV."
     },
     {
       "group": "Treat",
@@ -287,11 +292,11 @@
     {
       "group": "Rain",
       "title": "Gutters, Leaf Screens, First-Flush",
-      "note": "Metal roof \u2248815 m\u00b2; overflow to swale + soakaway."
+      "note": "Metal roof ≈815 m²; overflow to swale + soakaway."
     },
     {
       "group": "Rain",
-      "title": "Irrigation Zones Z1\u2013Z6",
+      "title": "Irrigation Zones Z1–Z6",
       "note": "IP-1 pump, disc filter; garden, maples, beds, orchard, courtyard, coop."
     }
   ],
@@ -674,13 +679,64 @@
       "id": "led",
       "title": "LED + Controls",
       "note": "Circuits and dimming.",
-      "detail": "LED throughout with simple scene dimming in living, kitchen, and master \u2014 no proprietary lock-in."
+      "detail": "LED throughout with simple scene dimming in living, kitchen, and master — no proprietary lock-in."
     },
     {
       "id": "ev",
       "title": "EV Ready",
       "note": "Garage feeder.",
       "detail": "Pull a 40A EV feeder to the garage now so a charger is a breaker away later."
+    }
+  ],
+  "houseProjects": [
+    {
+      "id": "weberman-residence",
+      "title": "Weberman Residence",
+      "summary": "6,334 of 6,400 SF · Layout round 1 applied · courtyard shape pending",
+      "sections": [
+        {
+          "id": "01-layout",
+          "title": "01 Layout",
+          "summary": "Deck round 1 applied (Oct 20) · courtyard shape pending a clarification deck",
+          "stats": [
+            {
+              "label": "Status",
+              "value": "Round 1 applied; shape pending clarification deck"
+            },
+            {
+              "label": "Size cap",
+              "value": "6,400 SF"
+            },
+            {
+              "label": "Current",
+              "value": "6,334 SF (was 5,272)"
+            }
+          ],
+          "decks": [
+            {
+              "title": "Shaping",
+              "url": "https://webermanapps.github.io/style-swipe/weberman-shaping-mcsc10/"
+            },
+            {
+              "title": "Extra Space",
+              "url": "https://webermanapps.github.io/style-swipe/weberman-extra-space-jr5a6x/"
+            },
+            {
+              "title": "Kids Wing",
+              "url": "https://webermanapps.github.io/style-swipe/weberman-kids-wing-2e96vw/"
+            },
+            {
+              "title": "Living and Guest",
+              "url": "https://webermanapps.github.io/style-swipe/weberman-living-and-guest-4jhhwm/"
+            },
+            {
+              "title": "Flow and Zoning",
+              "url": "https://webermanapps.github.io/style-swipe/weberman-flow-and-zoning-4hxezl/"
+            }
+          ]
+        }
+      ],
+      "later": "Coming next: 02 Systems, 03 Finishes."
     }
   ]
 }
