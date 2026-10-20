@@ -10,36 +10,7 @@
     "Sustainable Luxury"
   ],
   "status": "Layout updated from 5 decks (Oct 20): 5,272 → 6,334 SF conditioned (cap 6,400). Courtyard shape held pending a clarification deck.",
-  "decisions": [
-    {
-      "title": "Kitchen: Herb Nook To Corner",
-      "note": "Move the herb nook to the corner? Yes or no."
-    },
-    {
-      "title": "Kitchen: Brushed Stainless Faucet",
-      "note": "Confirm the faucet finish."
-    },
-    {
-      "title": "Kitchen: Built-In Stainless Fridge",
-      "note": "Confirm built-in over freestanding."
-    },
-    {
-      "title": "Hardware, Table and Lights This or That",
-      "note": "Door hardware, dining table, exterior lights."
-    },
-    {
-      "title": "Wall Texture This or That",
-      "note": "Run a wall texture / accent plaster round, or hold?"
-    },
-    {
-      "title": "Deck Rule: 5-Cap Vs Full Library",
-      "note": "Dashboard shelf stays at 5 (Max+Nozomi) while Deck Building holds the full library — confirm that split, or change it."
-    },
-    {
-      "title": "Site, Finish Tier, Climbing Pavilion",
-      "note": "Still open location, finish tier, and climbing pavilion details."
-    }
-  ],
+  "decisions": [],
   "pending": [
     {
       "title": "Engineer Stud Check",
