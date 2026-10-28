@@ -1,7 +1,55 @@
 {
  "agent": "blueprint",
- "updated": "2026-10-28T13:35:04+07:00",
+ "updated": "2026-10-28T13:42:52+07:00",
  "decks": [
+  {
+   "id": "weberman-kitchen-contrast-deck-g3xdi1",
+   "name": "Weberman Kitchen Contrast",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-kitchen-contrast-deck-g3xdi1/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:42:52+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, kitchen A/B contrast, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:35:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:35 PM ICT — NEW kitchen A/B contrast from ready renders for Blueprint; wings should not feel identical. submit_agent blueprint."
+  },
+  {
+   "id": "weberman-kids-wing-contrast-deck-zl4w58",
+   "name": "Weberman Kids Wing Contrast",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-kids-wing-contrast-deck-zl4w58/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:42:52+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, kids wing A/B contrast, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:35:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:35 PM ICT — NEW kids wing A/B contrast from ready renders for Blueprint; loft play-vs-sleep + painted cubbies. submit_agent blueprint."
+  },
+  {
+   "id": "weberman-living-office-contrast-deck-wxnpk1",
+   "name": "Weberman Living Office Contrast",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-living-office-contrast-deck-wxnpk1/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:42:52+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, living+office A/B contrast, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:36:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:36 PM ICT — NEW living+office A/B contrast (wave 2) from ready renders for Blueprint. submit_agent blueprint."
+  },
   {
    "id": "weberman-courtyard-mood-deck-ykqdc5",
    "name": "Courtyard Mood",
@@ -109,21 +157,6 @@
    "requested_at": "2026-10-20T19:36:00+07:00",
    "new": true,
    "note": "Max asked via Blueprint Oct 20 2026 ICT: house layout decks for the 6,400 sq ft cap. Results go to Blueprint"
-  },
-  {
-   "id": "weberman-flow-and-zoning",
-   "name": "Flow and Zoning",
-   "url": "https://webermanapps.github.io/style-swipe/weberman-flow-and-zoning-4hxezl/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-20T19:50:00+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards, ready now, plan sketches, with Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-20T19:36:00+07:00",
-   "new": true,
-   "note": "Max asked via Blueprint Oct 20 2026 ICT: house layout decks for the 6,400 sq ft cap. Results go to Blueprint"
   }
  ],
  "held": [],
@@ -207,5 +240,23 @@
  ],
  "cap": 10,
  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
- "queued": []
+ "queued": [
+  {
+   "id": "weberman-flow-and-zoning",
+   "name": "Flow and Zoning",
+   "url": "https://webermanapps.github.io/style-swipe/weberman-flow-and-zoning-4hxezl/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-20T19:50:00+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, ready now, plan sketches, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-20T19:36:00+07:00",
+   "new": true,
+   "note": "Max asked via Blueprint Oct 20 2026 ICT: house layout decks for the 6,400 sq ft cap. Results go to Blueprint",
+   "queued_at": "2026-10-28T13:42:52+07:00",
+   "pinned": false
+  }
+ ]
 }
