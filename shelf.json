@@ -1,7 +1,23 @@
 {
  "agent": "blueprint",
- "updated": "2026-10-20T19:50:00+07:00",
+ "updated": "2026-10-28T13:21:33+07:00",
  "decks": [
+  {
+   "id": "weberman-wellness-finishes-deck-3ymg8w",
+   "name": "Weberman Wellness Finishes",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-wellness-finishes-deck-3ymg8w/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:21:33+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, finishes & mood, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:16:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:16 PM ICT — wellness finishes/mood/materials for Blueprint; layout settled Oct 20. submit_agent blueprint."
+  },
   {
    "id": "weberman-shaping",
    "name": "Shaping",
