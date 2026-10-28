@@ -1,6 +1,6 @@
 {
  "agent": "blueprint",
- "updated": "2026-10-28T13:42:52+07:00",
+ "updated": "2026-10-28T22:16:11+07:00",
  "decks": [
   {
    "id": "weberman-kitchen-contrast-deck-g3xdi1",
@@ -33,38 +33,6 @@
    "pinned": true,
    "new": true,
    "note": "Machan Oct 28 ~1:35 PM ICT — NEW kids wing A/B contrast from ready renders for Blueprint; loft play-vs-sleep + painted cubbies. submit_agent blueprint."
-  },
-  {
-   "id": "weberman-living-office-contrast-deck-wxnpk1",
-   "name": "Weberman Living Office Contrast",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-living-office-contrast-deck-wxnpk1/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-28T13:42:52+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards, living+office A/B contrast, with Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-28T13:36:00+07:00",
-   "pinned": true,
-   "new": true,
-   "note": "Machan Oct 28 ~1:36 PM ICT — NEW living+office A/B contrast (wave 2) from ready renders for Blueprint. submit_agent blueprint."
-  },
-  {
-   "id": "weberman-courtyard-mood-deck-ykqdc5",
-   "name": "Courtyard Mood",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-courtyard-mood-deck-ykqdc5/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-28T13:35:04+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards, courtyard character & materials, with Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-28T13:22:00+07:00",
-   "pinned": true,
-   "new": true,
-   "note": "Machan Oct 28 ~1:22 PM ICT — NEW courtyard mood deck for Blueprint; replaces unanswered Courtyard & Engawa finish style. submit_agent blueprint."
   },
   {
    "id": "weberman-engawa-edge-deck-xdsa18",
@@ -257,6 +225,22 @@
    "note": "Max asked via Blueprint Oct 20 2026 ICT: house layout decks for the 6,400 sq ft cap. Results go to Blueprint",
    "queued_at": "2026-10-28T13:42:52+07:00",
    "pinned": false
+  }
+ ],
+ "done": [
+  {
+   "id": "weberman-courtyard-mood-deck-ykqdc5",
+   "at": "2026-10-28T21:30:48+07:00",
+   "name": "Courtyard Mood",
+   "answered": 10,
+   "total": 10
+  },
+  {
+   "id": "weberman-living-office-contrast-deck-wxnpk1",
+   "at": "2026-10-28T21:33:27+07:00",
+   "name": "Weberman Living Office Contrast",
+   "answered": 7,
+   "total": 10
   }
  ]
 }
