@@ -1,7 +1,39 @@
 {
  "agent": "blueprint",
- "updated": "2026-10-28T13:21:33+07:00",
+ "updated": "2026-10-28T13:35:04+07:00",
  "decks": [
+  {
+   "id": "weberman-courtyard-mood-deck-ykqdc5",
+   "name": "Courtyard Mood",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-courtyard-mood-deck-ykqdc5/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:35:04+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, courtyard character & materials, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:22:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:22 PM ICT — NEW courtyard mood deck for Blueprint; replaces unanswered Courtyard & Engawa finish style. submit_agent blueprint."
+  },
+  {
+   "id": "weberman-engawa-edge-deck-xdsa18",
+   "name": "Engawa Edge",
+   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-engawa-edge-deck-xdsa18/",
+   "total": 10,
+   "topic": "weberman-residence",
+   "added": "2026-10-28T13:35:04+07:00",
+   "tag": "Residence",
+   "blurb": "10 cards, timber engawa edge & mood, with Notes",
+   "answered": 0,
+   "requested": true,
+   "requested_at": "2026-10-28T13:22:00+07:00",
+   "pinned": true,
+   "new": true,
+   "note": "Machan Oct 28 ~1:22 PM ICT — NEW engawa edge deck for Blueprint; timber+stone step settled Round 2. submit_agent blueprint."
+  },
   {
    "id": "weberman-wellness-finishes-deck-3ymg8w",
    "name": "Weberman Wellness Finishes",
