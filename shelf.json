@@ -1,61 +1,7 @@
 {
  "agent": "blueprint",
- "updated": "2026-10-28T23:01:38+07:00",
+ "updated": "2026-10-29T14:32:19+07:00",
  "decks": [
-  {
-   "id": "weberman-office-design-deck-bfcg8v",
-   "name": "Weberman Office Design",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-office-design-deck-bfcg8v/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-28T23:01:38+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards · office full room design · Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-28T23:01:38+07:00",
-   "pinned": true,
-   "new": true,
-   "color": "#05668D",
-   "made": "2026-10-28",
-   "note": "Machan Oct 28 ~10:44 PM ICT — Office Design for Blueprint."
-  },
-  {
-   "id": "weberman-wellness-design-deck-8pq8q1",
-   "name": "Weberman Wellness Design",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-wellness-design-deck-8pq8q1/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-28T23:01:38+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards · wellness program/gear · Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-28T23:01:38+07:00",
-   "pinned": true,
-   "new": true,
-   "color": "#05668D",
-   "made": "2026-10-28",
-   "note": "Machan Oct 28 ~10:44 PM ICT — Wellness Design (not finishes redo)."
-  },
-  {
-   "id": "weberman-courtyard-photo-deck-uf7l0r",
-   "name": "Weberman Courtyard Photo",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/weberman-courtyard-photo-deck-uf7l0r/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-10-28T23:01:38+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards · photoreal courtyard refine · Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-10-28T23:01:38+07:00",
-   "pinned": true,
-   "new": true,
-   "color": "#05668D",
-   "made": "2026-10-28",
-   "note": "Machan Oct 28 ~10:45 PM ICT — Courtyard Photo realism; Mood picks embodied."
-  },
   {
    "id": "weberman-kitchen-contrast-deck-g3xdi1",
    "name": "Weberman Kitchen Contrast",
@@ -295,6 +241,27 @@
    "at": "2026-10-28T21:33:27+07:00",
    "name": "Weberman Living Office Contrast",
    "answered": 7,
+   "total": 10
+  },
+  {
+   "id": "weberman-office-design-deck-bfcg8v",
+   "at": "2026-10-29T00:00:23+07:00",
+   "name": "Weberman Office Design",
+   "answered": 10,
+   "total": 10
+  },
+  {
+   "id": "weberman-wellness-design-deck-8pq8q1",
+   "at": "2026-10-29T00:04:14+07:00",
+   "name": "Weberman Wellness Design",
+   "answered": 10,
+   "total": 10
+  },
+  {
+   "id": "weberman-courtyard-photo-deck-uf7l0r",
+   "at": "2026-10-29T00:07:25+07:00",
+   "name": "Weberman Courtyard Photo",
+   "answered": 8,
    "total": 10
   }
  ]
