@@ -1,15 +1,15 @@
 {
   "agent": "Blueprint",
   "role": "Dream Home Agent",
-  "updated": "Oct 20, 2026 · 20:40 ICT",
+  "updated": "Nov 3, 2026 · 12:10 ICT",
   "project": "Weberman Residence",
   "facts": [
     "Thailand",
-    "~6,334 sf",
+    "~6,400 sf cap",
     "4 Bed / 3.5 Bath",
     "Sustainable Luxury"
   ],
-  "status": "Layout updated from 5 decks (Oct 20): 5,272 → 6,334 SF conditioned (cap 6,400). Courtyard shape held pending a clarification deck.",
+  "status": "Current design: white smooth drywall by default with pale plaster accents; art brings the color. Tatami room is traditional (not white). Office/music room is white-based with acoustic panels. Kitchen, living and dining share one large pale tile floor. 3D model updated Nov 3.",
   "decisions": [],
   "pending": [
     {
@@ -30,69 +30,14 @@
   ],
   "recent": [
     {
-      "title": "Layout Updated From 5 Decks",
-      "note": "Layout updated from 5 decks (Oct 20): 6,334 SF (was 5,272; cap 6,400). Guest suite, teen kids' wing with lofts, bigger wellness + studio, flat-floor living.",
-      "date": "Oct 20"
+      "title": "3D Model Updated",
+      "note": "Model refreshed to the current design (commit 0bdeff1).",
+      "date": "Nov 3"
     },
     {
-      "title": "Morning Report Oct 15",
-      "note": "Late post after usage outage; no real overnight deck answers.",
-      "date": "Oct 15"
-    },
-    {
-      "title": "Morning Report",
-      "note": "Due 5:00 ICT. Evening Report retired 20:05 Oct 14.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Energy Choices Bottom Sheet",
-      "note": "Tap Pick to open a compact sheet with the 6 energy systems (Style Swipe pick B).",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Max And Nozomi Decks",
-      "note": "Separate deck sections and launchers. Nozomi's Finish Details deck (20 cards) is ready. Bottom tabs removed, This or That rounds renamed.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "R66 Deck Launcher Aligned",
-      "note": "Kit 79aff73; Ready starter 20-card deck; refill builder + request watch routines.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Ready Deck Shelf (5-deck cap)",
-      "note": "Grouped collapsible decks, R63 pin max 3, R66 launcher with 5 Blueprint categories.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Agent Dashboard Picks + R65 + Freeze Lift",
-      "note": "Plain title header; Water Systems diagram + list; Routines section; overnight pull found tests only.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "R63 Unfinished Decks Pin + Catch-Up",
-      "note": "Newest unfinished Blueprint decks pinned above Your Apps; report.json posted; submit.js synced; skipped cards return for reword (R64).",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Morning Report",
-      "note": "Today's focus, decisions owed and pending items.",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Submit Password Gate",
-      "note": "Blueprint Swipe and This or That Home R1+R2 now need the team password to send (done by Grok Bot).",
-      "date": "Oct 14"
-    },
-    {
-      "title": "Coach Layout Round 1",
-      "note": "Shared top bar, title before report, decisions under report, See All, tighter rhythm.",
-      "date": "Oct 13"
-    },
-    {
-      "title": "Your Apps On Top",
-      "note": "3D Model, Blueprint Swipe, This or That + Material Picks, and Drawing Set sit under the header.",
-      "date": "Oct 13"
+      "title": "Finishes Set",
+      "note": "White smooth drywall default, pale plaster accents, art for color; traditional tatami room; white office/music room with acoustic panels; one large pale tile floor across kitchen, living and dining.",
+      "date": "Nov 3"
     }
   ],
   "links": [
@@ -140,38 +85,21 @@
   },
   "report": {
     "agent": "blueprint",
-    "type": "Morning Report",
-    "date": "2026-10-15",
-    "posted": "2026-10-15T07:25:37+07:00",
-    "due_by": "05:00 ICT",
-    "late": true,
-    "late_minutes": 145,
-    "note": "Posted late — overnight usage outage; Morning Report automation missed 4:49/5:00 ICT.",
+    "type": "Status",
+    "date": "2026-11-03",
+    "posted": "2026-11-03T12:10:00+07:00",
     "items": [
       {
-        "cat": "Today",
+        "cat": "Open Decks",
         "items": [
-          "Catch-up Morning Report after overnight usage outage (automation missed 5:00 ICT).",
-          "Inbox pull: still no real Blueprint deck submissions (tests only) — nothing to apply or refill.",
-          "Ready To Swipe shelf holds 5 decks (3 Max + 2 Nozomi); Evening Report stays retired; deck counts only."
-        ]
-      },
-      {
-        "cat": "Decide",
-        "items": [
-          "Kitchen calls: herb nook to corner, brushed stainless faucet, built-in stainless fridge.",
-          "Round 3 / Hardware, Table and Lights This or That: door hardware, dining table, exterior lights.",
-          "Wall texture This or That round — run or hold?",
-          "Which deck rule wins: 5-deck cap on the dashboard shelf vs full library on Deck Building?",
-          "Still open: site location, finish tier, climbing pavilion."
+          "Kitchen Contrast, Kids Wing Contrast and Engawa Edge are still open."
         ]
       },
       {
         "cat": "Pending",
         "items": [
           "Engineer check of steel stud sizing and connections.",
-          "Beds and bath-vanity swipe deck images still to generate.",
-          "Older room/material decks resize to 20 when we next touch them."
+          "Still open: site location, climbing pavilion."
         ]
       }
     ]
