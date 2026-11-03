@@ -1,23 +1,7 @@
 {
  "agent": "blueprint",
- "updated": "2026-11-03T12:10:00+07:00",
+ "updated": "2026-11-03T14:38:00+07:00",
  "decks": [
-  {
-   "id": "exterior-finishes-deck",
-   "name": "Exterior Finishes Deck",
-   "url": "https://webermanapps.github.io/branding-djqmb410/decks/exterior-finishes-deck/",
-   "total": 10,
-   "topic": "weberman-residence",
-   "added": "2026-11-03T12:40:00+07:00",
-   "tag": "Residence",
-   "blurb": "10 cards, exterior A/B photos, with Notes",
-   "answered": 0,
-   "requested": true,
-   "requested_at": "2026-11-03T12:11:00+07:00",
-   "pinned": true,
-   "new": true,
-   "note": "Machan Nov 3 2026: Weberman Residence exterior finishes (yakisugi vs teak, mix, wood placement) for Blueprint; submit_agent blueprint."
-  },
   {
    "id": "weberman-kitchen-contrast-deck-g3xdi1",
    "name": "Weberman Kitchen Contrast",
